@@ -1262,6 +1262,7 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php?r=site/logi
 ---
+<<<<<<< HEAD
 2016/08/21 22:13:20 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
 Stack trace:
 #0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
@@ -2097,4 +2098,253 @@ Stack trace:
 #25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
 #26 {main}
 REQUEST_URI=/index.php?r=user/view&id=2
+---
+=======
+2016/08/21 21:04:44 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2016/08/21 21:04:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/max/www/lozay/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /home/max/www/lozay/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/max/www/lozay/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/max/www/lozay/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/max/www/lozay/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /home/max/www/lozay/protected/views/site/index.php(14): CActiveRecord->findAll(Array)
+#8 /home/max/www/lozay/framework/web/CBaseController.php(126): require('/home/max/www/l...')
+#9 /home/max/www/lozay/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/max/www/l...', NULL, true)
+#10 /home/max/www/lozay/framework/web/CController.php(869): CBaseController->renderFile('/home/max/www/l...', NULL, true)
+#11 /home/max/www/lozay/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#12 /home/max/www/lozay/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/max/www/lozay/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/max/www/lozay/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/max/www/lozay/framework/web/CWebApplication.php(282): CController->run('')
+#18 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/max/www/lozay/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php
+---
+2016/08/21 21:04:44 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2016/08/21 22:05:27 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2016/08/21 22:05:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection.' in /home/max/www/lozay/framework/db/CDbConnection.php:405
+Stack trace:
+#0 /home/max/www/lozay/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/max/www/lozay/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/max/www/lozay/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/max/www/lozay/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(637): CApplication->getDb()
+#5 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 /home/max/www/lozay/framework/db/ar/CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 /home/max/www/lozay/protected/views/site/index.php(14): CActiveRecord->findAll(Array)
+#8 /home/max/www/lozay/framework/web/CBaseController.php(126): require('/home/max/www/l...')
+#9 /home/max/www/lozay/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/max/www/l...', NULL, true)
+#10 /home/max/www/lozay/framework/web/CController.php(869): CBaseController->renderFile('/home/max/www/l...', NULL, true)
+#11 /home/max/www/lozay/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#12 /home/max/www/lozay/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/max/www/lozay/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/max/www/lozay/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/max/www/lozay/framework/web/CWebApplication.php(282): CController->run('')
+#18 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/max/www/lozay/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php
+---
+2016/08/21 22:05:27 [error] [exception.CDbException] SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+2016/09/11 19:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/09/11 19:44:47 [error] [php] Undefined variable: category (/home/max/www/lozay/protected/views/layouts/main.php:143)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /home/max/www/lozay/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /home/max/www/lozay/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /home/max/www/lozay/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /home/max/www/lozay/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /home/max/www/lozay/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /home/max/www/lozay/framework/web/CBaseController.php(126): require()
+#7 /home/max/www/lozay/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /home/max/www/lozay/framework/web/CController.php(784): SiteController->renderFile()
+#9 /home/max/www/lozay/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/max/www/lozay/framework/web/CController.php(286): SiteController->runAction()
+#13 /home/max/www/lozay/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /home/max/www/lozay/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+2016/09/11 19:50:53 [error] [php] Undefined variable: category (/home/max/www/lozay/protected/views/layouts/main.php:67)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /home/max/www/lozay/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /home/max/www/lozay/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /home/max/www/lozay/framework/web/CBaseController.php(214): CContentDecorator->run()
+#4 /home/max/www/lozay/framework/web/CBaseController.php(308): SiteController->endWidget()
+#5 /home/max/www/lozay/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /home/max/www/lozay/framework/web/CBaseController.php(126): require()
+#7 /home/max/www/lozay/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /home/max/www/lozay/framework/web/CController.php(784): SiteController->renderFile()
+#9 /home/max/www/lozay/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/max/www/lozay/framework/web/CController.php(286): SiteController->runAction()
+#13 /home/max/www/lozay/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /home/max/www/lozay/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php
+2016/09/18 14:26:43 [error] [php] Trying to get property of non-object (/home/max/www/lozay/protected/modules/admin/views/menu2/index.php:32)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): Menu2Controller->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): Menu2Controller->renderPartial()
+#2 /home/max/www/lozay/protected/modules/admin/controllers/Menu2Controller.php(134): Menu2Controller->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): Menu2Controller->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): Menu2Controller->runAction()
+#6 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): Menu2Controller->filterAccessControl()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(265): Menu2Controller->runActionWithFilters()
+#12 /home/max/www/lozay/framework/web/CWebApplication.php(282): Menu2Controller->run()
+#13 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/menu2
+2016/09/18 18:40:25 [error] [php] Trying to get property of non-object (/home/max/www/lozay/protected/modules/admin/views/menu3/_form.php:34)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): Menu3Controller->renderFile()
+#1 /home/max/www/lozay/protected/modules/admin/views/menu3/create.php(18): Menu3Controller->renderPartial()
+#2 /home/max/www/lozay/framework/web/CBaseController.php(126): require()
+#3 /home/max/www/lozay/framework/web/CBaseController.php(95): Menu3Controller->renderInternal()
+#4 /home/max/www/lozay/framework/web/CController.php(869): Menu3Controller->renderFile()
+#5 /home/max/www/lozay/framework/web/CController.php(782): Menu3Controller->renderPartial()
+#6 /home/max/www/lozay/protected/modules/admin/controllers/Menu3Controller.php(84): Menu3Controller->render()
+#7 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): Menu3Controller->actionCreate()
+#8 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): Menu3Controller->runAction()
+#10 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): Menu3Controller->filterAccessControl()
+#13 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#15 /home/max/www/lozay/framework/web/CController.php(265): Menu3Controller->runActionWithFilters()
+#16 /home/max/www/lozay/framework/web/CWebApplication.php(282): Menu3Controller->run()
+#17 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#19 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/menu3/create
+2016/09/18 18:57:02 [error] [php] Trying to get property of non-object (/home/max/www/lozay/protected/modules/admin/controllers/PostController.php:77)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): PostController->runAction()
+#1 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): PostController->filterAccessControl()
+#4 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/max/www/lozay/framework/web/CController.php(265): PostController->runActionWithFilters()
+#7 /home/max/www/lozay/framework/web/CWebApplication.php(282): PostController->run()
+#8 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=admin/post/create
+2016/09/18 19:09:46 [error] [php] Undefined variable: pages (/home/max/www/lozay/protected/views/menu1/view.php:51)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): Menu1Controller->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): Menu1Controller->renderPartial()
+#2 /home/max/www/lozay/protected/controllers/Menu1Controller.php(56): Menu1Controller->render()
+#3 unknown(0): Menu1Controller->actionView()
+#4 /home/max/www/lozay/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#5 /home/max/www/lozay/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#6 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): Menu1Controller->runAction()
+#8 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): Menu1Controller->filterAccessControl()
+#11 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#13 /home/max/www/lozay/framework/web/CController.php(265): Menu1Controller->runActionWithFilters()
+#14 /home/max/www/lozay/framework/web/CWebApplication.php(282): Menu1Controller->run()
+#15 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#17 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=menu1/view&id=3
+>>>>>>> 7992a83213e8ccb304cf2829d8a96f9e3f40cbd7
+2016/09/18 19:39:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gb_lozay15.menu1' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `menu1`.
+2016/09/18 19:39:31 [error] [exception.CDbException] exception 'CDbException' with message 'The table "menu1" for active record class "Menu1" cannot be found in the database.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/db/ar/CActiveRecord.php:2387
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Menu1))
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/db/ar/CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/db/ar/CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/layouts/main.php(122): CActiveRecord->findAll()
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(784): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('')
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/
+---
+2016/09/18 19:39:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'gb_lozay15.t' doesn't exist. The SQL statement executed was: SELECT * FROM  `t`.
+2016/09/18 19:46:37 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/modules/admin/views/menu1/view.php(27): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/modules/admin/controllers/Menu1Controller.php(69): CController->render('view', Array)
+#11 [internal function]: Menu1Controller->actionView('6')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(Menu1Controller), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(Menu1Controller), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/menu1/vie...')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=admin/menu1/view&id=6
+HTTP_REFERER=http://lozay.ru/index.php?r=admin/menu1/create
 ---

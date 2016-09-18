@@ -56,12 +56,33 @@
 	<div class="row">
 		<select class="form-control" name="cat">
 			<?php
-				$cat3s = Cat3::model()->findAll();
-			foreach ($cat3s as $cat3){
-				$subcategory = Subcategory::model()->findByPk($cat3->subcategory_id);
-				$category = Category::model()->findByPk($cat3->category_id);
-				echo "<option value='".$cat3->id."'>".$cat3->name."</option>";
-			}
+
+				$menu1 = Menu1::model()->findAll();
+				foreach ($menu1 as $item1){
+					$menu2 = Menu2::model()->findAllByAttributes(array("parent_id"=>$item1->id));
+					if(count($menu2)==0){
+						echo "<option value='".$item1->id."_0_0'>".$item1->name."</option>";
+					}
+					else{
+						foreach ($menu2 as $item2){
+							$menu3 = Menu3::model()->findAllByAttributes(array("parent_id"=>$item2->id));
+							if(count($menu3)==0){
+								echo "<option value='".$item1->id."_".$item2->id."_0'>".$item2->name." (".$item1->name.")</option>";
+							}
+							else{
+								foreach ($menu3 as $item3) {
+									echo "<option value='".$item1->id."_".$item2->id."_".$item3->id."'>".$item3->name." (".$item2->name." - ".$item1->name.")</option>";								}
+							}
+						}
+					}
+				}
+
+//				$cat3s = Cat3::model()->findAll();
+//			foreach ($cat3s as $cat3){
+//				$subcategory = Subcategory::model()->findByPk($cat3->subcategory_id);
+//				$category = Category::model()->findByPk($cat3->category_id);
+//				echo "<option value='".$cat3->id."'>".$cat3->name."</option>";
+//			}
 			?>
 		</select>
 	</div>
