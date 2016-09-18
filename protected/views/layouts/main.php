@@ -20,9 +20,75 @@
 	<![endif]-->
 	<link rel="stylesheet" href="/mPurpose-master/css/main.css">
 
+	<link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css">
+
 	<link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
 	<script src="/mPurpose-master/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<style>
+	.dropdown-submenu {
+		position: relative;
+	}
+
+	.navbar-default{
+		background: #fff;
+	}
+	
+	.navbar-nav li a {
+		background: #fff;
+	}
+
+	.navbar-nav li a:hover {
+		background: #3376BC;
+	}
+
+	.dropdown-submenu>.dropdown-menu {
+		top: 0;
+		left: 100%;
+		margin-top: -6px;
+		margin-left: -1px;
+		-webkit-border-radius: 0 6px 6px 6px;
+		-moz-border-radius: 0 6px 6px;
+		border-radius: 0 6px 6px 6px;
+	}
+
+	.dropdown-submenu:hover>.dropdown-menu {
+		display: block;
+	}
+
+	.dropdown-submenu>a:after {
+		display: block;
+		content: " ";
+		float: right;
+		width: 0;
+		height: 0;
+		border-color: transparent;
+		border-style: solid;
+		border-width: 5px 0 5px 5px;
+		border-left-color: #3376BC;
+		margin-top: 5px;
+		margin-right: -10px;
+	}
+
+	.dropdown-submenu:hover>a:after {
+		border-left-color: #fff;
+	}
+
+	.dropdown-submenu.pull-left {
+		float: none;
+	}
+
+	.dropdown-submenu.pull-left>.dropdown-menu {
+		left: -100%;
+		margin-left: 10px;
+		-webkit-border-radius: 6px 0 6px 6px;
+		-moz-border-radius: 6px 0 6px 6px;
+		border-radius: 6px 0 6px 6px;
+	}
+	.navbar-right li a{
+		font-size: 20px;
+	}
+ </style>
 </head>
 <body>
 <!--[if lt IE 7]>
@@ -31,70 +97,85 @@
 
 
 <!-- Navigation & Logo-->
-<div class="mainmenu-wrapper">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
-		<div class="menuextras">
-			<div class="extras">
-<!--				<ul>-->
-<!--					<li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a href="page-shopping-cart.html"><b>3 items</b></a></li>-->
-<!--					<li>-->
-<!--						<div class="dropdown choose-country">-->
-<!--							<a class="#" data-toggle="dropdown" href="#"><img src="/mPurpose-master/img/flags/gb.png" alt="Great Britain"> UK</a>-->
-<!--							<ul class="dropdown-menu" role="menu">-->
-<!--								<li role="menuitem"><a href="#"><img src="/mPurpose-master/img/flags/us.png" alt="United States"> US</a></li>-->
-<!--								<li role="menuitem"><a href="#"><img src="/mPurpose-master/img/flags/de.png" alt="Germany"> DE</a></li>-->
-<!--								<li role="menuitem"><a href="#"><img src="/mPurpose-master/img/flags/es.png" alt="Spain"> ES</a></li>-->
-<!--							</ul>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li><a href="page-login.html">Login</a></li>-->
-<!--				</ul>-->
-			</div>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"></a>
 		</div>
-		<nav id="mainmenu" class="mainmenu">
-			<ul>
-				<li class="logo-wrapper"><a href="index.php"><img src="/mPurpose-master/img/logo.jpg" height="90px" alt="Multipurpose Twitter Bootstrap Template"></a></li>
-				<li>
-					<a href="index.php"> <i class="fa fa-home"></i> Главная</a>
-				</li>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://ok.ru" target="_blank"><i class="fa fa-odnoklassniki-square"></i> </a></li>
+				<li><a href=""><i class="fa fa-vk"></i> </a> </li>
+				<li><a href=""><i class="fa fa-youtube"></i> </a> </li>
+				<li><a href=""><i class="fa fa-twitter-square"></i> </a> </li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li><img src="/mPurpose-master/img/logo.jpg" height="50px"></li>
+				<li class=""><a href="index.php">Главная</a></li>
 				<?php
-				$categories = Category::model()->findAll();
-				foreach ($categories as $category){
-					$subcategories = Subcategory::model()->findAllByAttributes(array("category_id"=>$category->id));
-					if(count($subcategories)==0) {
+				$menu1s = Menu1::model()->findAll();
+				foreach ($menu1s as $menu1){
+					$menu2s = Menu2::model()->findAllByAttributes(array("parent_id"=>$menu1->id));
+					if(count($menu2s)==0){
+						?>
+						<li><a href="index.php?r=menu1/view&id=<?php echo $menu1->id; ?>"><?php echo $menu1->name; ?></a> </li>
+				<?php
+					}
+					else{
 						?>
 						<li>
-							<a href="index.php?r=category/view&id=<?php echo $category->id; ?>"><?php echo $category->name; ?></a>
-						</li>
-						<?php
-					}
-					else {
-						?>
-						<li class="has-submenu">
-							<a href="index.php?r=category/view&id=<?php echo $category->id; ?>"><?php echo $category->name; ?> <i class="fa fa-angle-down"></i> </a>
-							<div class="mainmenu-submenu">
-								<div class="mainmenu-submenu-inner">
-									<ul>
-									<?php
-									foreach ($subcategories as $subcategory){
+							<a href="index.php?r=menu1/view&id=<?php echo $menu1->id; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
+							<ul class="dropdown-menu multi-level">
+								<?php
+								foreach ($menu2s as $menu2){
+									$menu3s = Menu3::model()->findAllByAttributes(array("parent_id"=>$menu2->id));
+									if(count($menu3s)==0){
 										?>
-										<li><a href="index.php?r=subcategory/view&id=<?php echo $subcategory->id; ?>"><?php echo $subcategory->name; ?></a></li>
+										<li><a href="index.php?r=menu2/view&id=<?php echo $menu2->id; ?>"><?php echo $menu2->name; ?></a></li>
 										<?php
 									}
-									?>
-									</ul>
-								</div>
-							</div>
+									else{
+										?>
+										<li class="dropdown-submenu">
+											<a href="index.php?r=menu2/view&id=<?php echo $menu2->id; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $menu2->name; ?></a>
+											<ul class="dropdown-menu">
+												<?php
+												foreach ($menu3s as $menu3){
+													?>
+													<li><a href="index.php?r=menu3/view&id=<?php echo $menu3->id; ?>"><?php echo $menu3->name; ?></a></li>
+													<?php
+												}
+												?>
+											</ul>
+										</li>
+								<?php
+									}
+								}
+								?>
+							</ul>
 						</li>
 				<?php
 					}
 				}
 				?>
 			</ul>
-		</nav>
+		</div><!--/.nav-collapse -->
 	</div>
 </div>
 
+<div class="container">
+	<div class="navbar-template text-center">
+		<h1> </h1>
+		<p class="lead text-info"> <br> </p>
+		<a target="_blank" href="http://bootsnipp.com/snippets/featured/multi-level-dropdown-menu-bs3"> </a>
+	</div>
+</div>
 <!--<div class="section">-->
 <?php
 echo $content;

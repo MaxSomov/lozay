@@ -159,13 +159,13 @@
                     <a href="index.php?r=admin"><i class="fa fa-fw fa-dashboard"></i> Панель администратора</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/category"><i class="fa fa-fw fa-folder"></i> Основное меню</a>
+                    <a href="index.php?r=admin/menu1"><i class="fa fa-fw fa-folder"></i> Меню 1</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/subcategory"><i class="fa fa-fw fa-tag"></i> Подменю</a>
+                    <a href="index.php?r=admin/menu2"><i class="fa fa-fw fa-tag"></i> Меню 2</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/cat3"><i class="fa fa-fw fa-tags"></i> Нижнее меню</a>
+                    <a href="index.php?r=admin/menu3"><i class="fa fa-fw fa-tags"></i> Меню 3</a>
                 </li>
                 <li>
                     <a href="index.php?r=admin/post"><i class="fa fa-fw fa-file-text"></i> Статьи</a>

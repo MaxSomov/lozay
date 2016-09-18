@@ -2399,7 +2399,7 @@ span.color-red {
 .mainmenu .mainmenu-submenu-inner > li > a {
   font-size: 1.2em;
   padding: 1.2em 1.5em;
-  color: #999;
+  color: #3376BC;
   display: inline-block;
   text-decoration: none;
 }
@@ -2601,10 +2601,10 @@ span.color-red {
   white-space: nowrap;
 }
 .btn:hover {
-  background: none repeat scroll 0 0 #3b3c41;
-  color: #FFF;
+  background: none repeat scroll 0 0 #fff;
+  color: #3376BC;
   text-decoration: none;
-  border: 1px solid #3b3c41;
+  border: 1px solid #3376BC;
 }
 .btn .caret {
   border-top: 4px solid #FFF;

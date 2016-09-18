@@ -1,12 +1,12 @@
 <?php
 
-class PostController extends Controller
+class Menu2Controller extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-    public $layout = '//../modules/admin/views/layouts/main';
+	public $layout='//layouts/column2';
 
 	/**
 	 * @return array action filters
@@ -29,10 +29,10 @@ class PostController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('@'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'del'),
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -51,9 +51,20 @@ class PostController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+        $criteria = new CDbCriteria();
+        $criteria->condition = "menu2= ".$id;
+        $count = Post::model()->count($criteria);
+        $pages = new CPagination($count);
+        $pages->pageSize = 10;
+        $pages->applyLimit($criteria);
+
+        $posts = Post::model()->findAll($criteria);
+
+        $this->render('view',array(
+            'posts'=>$posts,
+            'pages'=>$pages,
+            'model'=>$this->loadModel($id),
+        ));
 	}
 
 	/**
@@ -62,21 +73,14 @@ class PostController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Post;
+		$model=new Menu2;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Menu2']))
 		{
-			$model->attributes=$_POST['Post'];
-            $model->view = 0;
-            $model->date = time();
-            $str = $_POST['cat'];
-            $str_array = explode("_", $str);
-            $model->menu1 = $str_array[0];
-            $model->menu2 = $str_array[1];
-            $model->menu3 = $str_array[2];
+			$model->attributes=$_POST['Menu2'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -98,13 +102,9 @@ class PostController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Post']))
+		if(isset($_POST['Menu2']))
 		{
-			$model->attributes=$_POST['Post'];
-            $model->cat3_id = $_POST['cat'];
-            $cat3 = Cat3::model()->findByPk($model->cat3_id);
-            $model->category_id = $cat3->category_id;
-            $model->subcategory_id = $cat3->subcategory_id;
+			$model->attributes=$_POST['Menu2'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -133,7 +133,7 @@ class PostController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Post');
+		$dataProvider=new CActiveDataProvider('Menu2');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -144,10 +144,10 @@ class PostController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Post('search');
+		$model=new Menu2('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Post']))
-			$model->attributes=$_GET['Post'];
+		if(isset($_GET['Menu2']))
+			$model->attributes=$_GET['Menu2'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -158,12 +158,12 @@ class PostController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Post the loaded model
+	 * @return Menu2 the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Post::model()->findByPk($id);
+		$model=Menu2::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -171,11 +171,11 @@ class PostController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Post $model the model to be validated
+	 * @param Menu2 $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='post-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='menu2-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
