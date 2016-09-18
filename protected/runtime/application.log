@@ -1262,3 +1262,839 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/index.php?r=site/logi
 ---
+2016/08/21 22:13:20 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+HTTP_REFERER=http://lozay.ru/?r=user/create
+---
+2016/08/22 06:11:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/08/22 06:11:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/08/22 06:11:47 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/08/24 05:02:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/08/24 05:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/08/24 05:02:15 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/08/26 00:53:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/08/26 00:53:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/08/26 00:53:32 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/08/28 09:30:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/08/28 09:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/08/28 09:31:13 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/08/31 15:51:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/08/31 15:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/08/31 15:51:41 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/02 15:09:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/02 15:09:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/02 15:09:30 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/05 09:15:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/05 09:15:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/05 09:16:08 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/07 02:17:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/07 02:17:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/07 02:17:53 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/08 22:51:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "print-439573653*57;".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('print-439573653...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?q=print-439573653*57;&w=print-439573653*57;&e=print-439573653*57;&r=print-439573653*57;&t=print-439573653*57;&y=print-439573653*57;&u=print-439573653*57;&i=print-439573653*57;&o=print-439573653*57;&p=print-439573653*57;&a=print-439573653*57;&s=print-439573653*57;&d=print-439573653*57;&f=print-439573653*57;&g=print-439573653*57;&h=print-439573653*57;&j=print-439573653*57;&k=print-439573653*57;&l=print-439573653*57;&x=print-439573653*57;&c=print-439573653*57;&v=print-439573653*57;&b=print-439573653*57;&n=print-439573653*57;&m=print-439573653*57;&1=print-439573653*57;&2=print-439573653*57;&3=print-439573653*57;&4=print-439573653*57;&5=print-439573653*57;&6=print-439573653*57;&7=print-439573653*57;&8=print-439573653*57;&9=print-439573653*57;&0=print-439573653*57;&_=print-439573653*57;&asc=print-439573653*57;&cmd=print-439573653*57;&ev=print-439573653*57;&ss=print-439573653*57;&dir=print-439573653*57;&code=print-439573653*57;&z=print-439573653*57;
+---
+2016/09/09 02:07:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/09 02:08:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/09 02:08:12 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/09 12:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "print-439573653*57;".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('print-439573653...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?q=print-439573653*57;&w=print-439573653*57;&e=print-439573653*57;&r=print-439573653*57;&t=print-439573653*57;&y=print-439573653*57;&u=print-439573653*57;&i=print-439573653*57;&o=print-439573653*57;&p=print-439573653*57;&a=print-439573653*57;&s=print-439573653*57;&d=print-439573653*57;&f=print-439573653*57;&g=print-439573653*57;&h=print-439573653*57;&j=print-439573653*57;&k=print-439573653*57;&l=print-439573653*57;&x=print-439573653*57;&c=print-439573653*57;&v=print-439573653*57;&b=print-439573653*57;&n=print-439573653*57;&m=print-439573653*57;&1=print-439573653*57;&2=print-439573653*57;&3=print-439573653*57;&4=print-439573653*57;&5=print-439573653*57;&6=print-439573653*57;&7=print-439573653*57;&8=print-439573653*57;&9=print-439573653*57;&0=print-439573653*57;&_=print-439573653*57;&asc=print-439573653*57;&cmd=print-439573653*57;&ev=print-439573653*57;&ss=print-439573653*57;&dir=print-439573653*57;&code=print-439573653*57;&z=print-439573653*57;
+---
+2016/09/09 12:15:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "print-439573653*57;".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('print-439573653...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?q=print-439573653*57;&w=print-439573653*57;&e=print-439573653*57;&r=print-439573653*57;&t=print-439573653*57;&y=print-439573653*57;&u=print-439573653*57;&i=print-439573653*57;&o=print-439573653*57;&p=print-439573653*57;&a=print-439573653*57;&s=print-439573653*57;&d=print-439573653*57;&f=print-439573653*57;&g=print-439573653*57;&h=print-439573653*57;&j=print-439573653*57;&k=print-439573653*57;&l=print-439573653*57;&x=print-439573653*57;&c=print-439573653*57;&v=print-439573653*57;&b=print-439573653*57;&n=print-439573653*57;&m=print-439573653*57;&1=print-439573653*57;&2=print-439573653*57;&3=print-439573653*57;&4=print-439573653*57;&5=print-439573653*57;&6=print-439573653*57;&7=print-439573653*57;&8=print-439573653*57;&9=print-439573653*57;&0=print-439573653*57;&_=print-439573653*57;&asc=print-439573653*57;&cmd=print-439573653*57;&ev=print-439573653*57;&ss=print-439573653*57;&dir=print-439573653*57;&code=print-439573653*57;&z=print-439573653*57;
+---
+2016/09/11 02:34:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/11 02:34:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/11 02:34:08 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/14 04:43:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/14 04:43:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/14 04:43:03 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/16 06:38:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/16 06:38:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/16 06:38:06 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
+2016/09/18 05:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articles/admin".' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('articles/admin')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=articles/admin
+---
+2016/09/18 05:35:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php:158
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(55): UserController->loadModel('1')
+#1 [internal function]: UserController->actionView('1')
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php?r=user/view&id=1
+---
+2016/09/18 05:35:35 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/home/virtwww/w_lozay-ru_d5a6a22a/http/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/home/virtwww/w...')
+#1 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/zii/widgets/CDetailView.php(157): CAssetManager->publish('/home/virtwww/w...')
+#3 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(147): CDetailView->init()
+#4 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(180): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#5 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/views/user/view.php(29): CBaseController->widget('zii.widgets.CDe...', Array)
+#6 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(126): require('/home/virtwww/w...')
+#7 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/virtwww/w...', Array, true)
+#8 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(869): CBaseController->renderFile('/home/virtwww/w...', Array, true)
+#9 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#10 /home/virtwww/w_lozay-ru_d5a6a22a/http/protected/controllers/UserController.php(56): CController->render('view', Array)
+#11 [internal function]: UserController->actionView('2')
+#12 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#13 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#14 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(291): CFilterChain->run()
+#21 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(282): CController->run('view')
+#23 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/web/CWebApplication.php(141): CWebApplication->runController('user/view')
+#24 /home/virtwww/w_lozay-ru_d5a6a22a/http/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#25 /home/virtwww/w_lozay-ru_d5a6a22a/http/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/index.php?r=user/view&id=2
+---
