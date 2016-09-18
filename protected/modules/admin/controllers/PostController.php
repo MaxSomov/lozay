@@ -78,7 +78,7 @@ class PostController extends Controller
             $model->menu2 = $str_array[1];
             $model->menu3 = $str_array[2];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(

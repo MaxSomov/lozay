@@ -84,7 +84,7 @@ class Menu1Controller extends Controller
 		{
 			$model->attributes=$_POST['Menu1'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+                $this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
