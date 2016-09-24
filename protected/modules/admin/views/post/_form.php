@@ -45,13 +45,7 @@
 <!--		--><?php //echo $form->error($model,'view'); ?>
 <!--	</div>-->
 
-	<div class="row">
-		Реклама
-		<?php echo $form->textField($model,'adv',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'adv'); ?>
-	</div>
 
-	<br>
 
 	<div class="row">
 		<select class="form-control" name="cat">
@@ -86,6 +80,38 @@
 			?>
 		</select>
 	</div>
+
+	<div class="row">
+		<select class="form-control" name="menu4">
+			<option value="0">null</option>
+			<?php
+			$menu = Menu4::model()->findAll();
+			foreach ($menu as $item){
+				?>
+				<option value="<?php echo $item->id; ?>"><?php echo $item->name; ?></option>
+			<?php
+			}
+			?>
+		</select>
+	</div>
+
+	<br>
+
+	<div class="row">
+		Метаданные
+		<?php echo $form->textField($model,'meta',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'meta'); ?>
+	</div>
+
+	<br>
+
+	<div class="row">
+		Реклама
+		<?php echo $form->textField($model,'adv',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'adv'); ?>
+	</div>
+
+	<br>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Создать' : 'Сохранить', array('class'=>'btn btn-primary')); ?>

@@ -15,6 +15,31 @@
 	</div>
 </div>
 
+<?php
+$nav = Menu4::model()->findAllByAttributes(array("menu2"=>$model->id));
+if(count($nav)){
+	?>
+	<nav class="navbar navbar-default">
+		<div class="navbar-fluid">
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<?php
+					foreach ($nav as $item){
+						?>
+						<li>
+							<a href="index.php?r=menu4/view&id=<?php echo $item->id; ?>"><?php echo $item->name; ?></a>
+						</li>
+						<?php
+					}
+					?>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<?php
+}
+?>
+
 
 <div class="container">
 	<div class="row">
