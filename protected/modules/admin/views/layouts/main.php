@@ -168,6 +168,9 @@
                     <a href="index.php?r=admin/menu3"><i class="fa fa-fw fa-tags"></i> Меню 3</a>
                 </li>
                 <li>
+                    <a href="index.php?r=admin/menu4"><i class="fa fa-fw fa-tags"></i> Еще меню</a>
+                </li>
+                <li>
                     <a href="index.php?r=admin/post"><i class="fa fa-fw fa-file-text"></i> Статьи</a>
                 </li>
                 <li>
