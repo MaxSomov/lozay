@@ -13,6 +13,8 @@
  * @property integer $menu1
  * @property integer $menu2
  * @property integer $menu3
+ * @property integer $menu4
+ * @property string $meta
  */
 class Post extends CActiveRecord
 {
@@ -33,11 +35,11 @@ class Post extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('head, content', 'required'),
-			array('date, view, menu1, menu2, menu3', 'numerical', 'integerOnly'=>true),
-			array('adv', 'safe'),
+			array('date, view, menu1, menu2, menu3, menu4', 'numerical', 'integerOnly'=>true),
+			array('adv, meta', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, head, content, date, view, adv, menu1, menu2, menu3', 'safe', 'on'=>'search'),
+			array('id, head, content, date, view, adv, menu1, menu2, menu3, menu4, meta', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +69,8 @@ class Post extends CActiveRecord
 			'menu1' => 'Menu1',
 			'menu2' => 'Menu2',
 			'menu3' => 'Menu3',
+			'menu4' => 'Menu4',
+			'meta' => 'Meta',
 		);
 	}
 
@@ -97,6 +101,8 @@ class Post extends CActiveRecord
 		$criteria->compare('menu1',$this->menu1);
 		$criteria->compare('menu2',$this->menu2);
 		$criteria->compare('menu3',$this->menu3);
+		$criteria->compare('menu4',$this->menu4);
+		$criteria->compare('meta',$this->meta,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
