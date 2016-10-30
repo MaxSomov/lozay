@@ -28,6 +28,8 @@
 
     <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="/css/template-blue.css">
+
     <script src="/mPurpose-master/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <style>
         .dropdown-submenu {
@@ -56,7 +58,8 @@
         }
 
         .navbar-nav li a:hover {
-            background: #3376BC;
+            background: #fff;
+            color: #3376BC;
         }
 
         .dropdown-submenu > .dropdown-menu {
@@ -85,14 +88,19 @@
             border-left-color: #3376BC;
             margin-top: 5px;
             margin-right: -10px;
+            border-left-color: #777;
         }
 
         .dropdown-submenu:hover > a:after {
-            border-left-color: #fff;
+            border-left-color: #3376BC;
         }
 
         .dropdown-submenu.pull-left {
             float: none;
+        }
+
+        .navbar-nav > li > a{
+            color: #000;
         }
 
         .dropdown-submenu.pull-left > .dropdown-menu {
@@ -102,9 +110,9 @@
             -moz-border-radius: 6px 0 6px 6px;
             border-radius: 6px 0 6px 6px;
         }
-
-        .navbar-right li a {
-            font-size: 20px;
+        
+        a{
+            ;
         }
     </style>
 </head>
@@ -118,6 +126,10 @@
     <img src="/mPurpose-master/img/logo.jpg" height="80px" style="margin-left: 120px">
 </div>
 <!-- Navigation & Logo-->
+
+
+
+
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -129,12 +141,19 @@
             </button>
             <a class="navbar-brand" href="#"></a>
         </div>
+
+        <style>
+            .navbar-right > li > a > i{
+                height: 50px;
+            }
+        </style>
+
         <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://ok.ru" target="_blank"><i class="fa fa-odnoklassniki-square"></i> </a></li>
-                <li><a href=""><i class="fa fa-vk"></i> </a></li>
-                <li><a href=""><i class="fa fa-youtube"></i> </a></li>
-                <li><a href=""><i class="fa fa-twitter-square"></i> </a></li>
+            <ul class="nav navbar-nav navbar-right"">
+                <li style="vertical-align: middle;"><a style="vertical-align: middle; width: 50px;" href="https://ok.ru" target="_blank"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-odnoklassniki-square fa-2x"></i> </a></li>
+                <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-vk fa-2x" ></i> </a></li>
+                <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-youtube fa-2x" ></i> </a></li>
+                <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-twitter-square fa-2x"></i> </a></li>
             </ul>
             <ul class="nav navbar-nav">
                 <li></li>

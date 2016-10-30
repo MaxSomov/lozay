@@ -4285,7 +4285,15 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #777
+    color: #3376BC;
+}
+
+.navbar-default .navbar-nav > li > a > i{
+    color: #777;
+}
+
+.navbar-default .navbar-nav > li > a:hover > i{
+    color: #fff;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {

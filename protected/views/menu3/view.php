@@ -58,7 +58,9 @@ if(count($nav)){
 						</div>
 						<div class="post-summary">
 							<p>
-								<?php echo explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content)[0]; ?>
+
+<!--								@TODO: !!-->
+								<?php $a = explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content)[0]; ?>
 							</p>
 						</div>
 						<div class="post-more">
