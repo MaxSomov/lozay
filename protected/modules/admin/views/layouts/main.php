@@ -173,6 +173,15 @@
                 <li>
                     <a href="<?= Yii::app()->createUrl('admin/post') ?>"><i class="fa fa-fw fa-file-text"></i> Статьи</a>
                 </li>
+                <li>
+                    <a href="<?= Yii::app()->createUrl('admin/footer1/update', array('id'=>1)); ?>">Низ 1</a>
+                </li>
+                <li>
+                    <a href="<?= Yii::app()->createUrl('admin/footer2/update', array('id'=>1)); ?>">Низ 2</a>
+                </li>
+                <li>
+                    <a href="<?= Yii::app()->createUrl('admin/footer3/update', array('id'=>1)); ?>">Низ 3</a>
+                </li>
 <!--                <li>-->
 <!--                    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-line-chart"></i> Статистика</a>-->
 <!--                </li>-->
