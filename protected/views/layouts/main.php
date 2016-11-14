@@ -110,7 +110,7 @@
             -moz-border-radius: 6px 0 6px 6px;
             border-radius: 6px 0 6px 6px;
         }
-        
+
         a{
             ;
         }
@@ -124,7 +124,16 @@
 <![endif]-->
 <div class="white" style="background: white">
     <img src="/mPurpose-master/img/logo.jpg" height="80px" style="margin-left: 120px">
+    <form class="col-md-3" style="float: right; margin-top: 20px;" method="post" action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i> </span>
+            <input name="keyword" type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Поиск">
+<!--            <input type="submit" value="s">-->
+        </div>
+    </form>
 </div>
+
+
 <!-- Navigation & Logo-->
 
 
@@ -157,7 +166,7 @@
             </ul>
             <ul class="nav navbar-nav">
                 <li></li>
-                <li class=""><a href="index.php">Главная</a></li>
+                <li class=""><a href="http://lozay/<?php /*echo Yii::app()->createUrl(""); */?>">Главная</a></li>
                 <?php
                 $menu1s = Menu1::model()->findAll();
                 foreach ($menu1s as $menu1) {
@@ -165,13 +174,13 @@
                     if (count($menu2s) == 0) {
                         ?>
                         <li>
-                            <a href="index.php?r=menu1/view&id=<?php echo $menu1->id; ?>"><?php echo $menu1->name; ?></a>
+                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></a>
                         </li>
                         <?php
                     } else {
                         ?>
                         <li>
-                            <a href="index.php?r=menu1/view&id=<?php echo $menu1->id; ?>" class="dropdown-toggle"
+                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>" class="dropdown-toggle"
                                data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
                             <ul class="dropdown-menu multi-level">
                                 <?php
@@ -180,13 +189,13 @@
                                     if (count($menu3s) == 0) {
                                         ?>
                                         <li>
-                                            <a href="index.php?r=menu2/view&id=<?php echo $menu2->id; ?>"><?php echo $menu2->name; ?></a>
+                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"><?php echo $menu2->name; ?></a>
                                         </li>
                                         <?php
                                     } else {
                                         ?>
                                         <li class="dropdown-submenu">
-                                            <a href="index.php?r=menu2/view&id=<?php echo $menu2->id; ?>"
+                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
                                                class="dropdown-toggle"
                                                data-toggle="dropdown"><?php echo $menu2->name; ?></a>
                                             <ul class="dropdown-menu">
@@ -194,7 +203,7 @@
                                                 foreach ($menu3s as $menu3) {
                                                     ?>
                                                     <li>
-                                                        <a href="index.php?r=menu3/view&id=<?php echo $menu3->id; ?>"><?php echo $menu3->name; ?></a>
+                                                        <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>"><?php echo $menu3->name; ?></a>
                                                     </li>
                                                     <?php
                                                 }

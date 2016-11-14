@@ -21,11 +21,11 @@ $this->pageTitle=Yii::app()->name;
 			</div>
 			<div class="post-summary">
 				<p>
-				<?php echo explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content[0]);?>
+				<?php echo explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content)[0];?>
 				</p>
 			</div>
 			<div class="post-more">
-				<a href="index.php?r=post/view&id=<?php echo $post->id; ?>" class="btn btn-small">Читать далее</a>
+				<a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>" class="btn btn-small">Читать далее</a>
 			</div>
 		</div>
 		<?php

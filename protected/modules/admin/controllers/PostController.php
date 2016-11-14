@@ -79,7 +79,7 @@ class PostController extends Controller
             $model->menu3 = $str_array[2];
             $model->menu4 = $_POST['menu4'];
 			if($model->save())
-				$$this->redirect(array('index'));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -182,4 +182,9 @@ class PostController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+    public function actionDel($id){
+        $this->loadModel($id)->delete();
+        $this->redirect(array('index'));
+    }
 }

@@ -21,7 +21,7 @@ $subcategories = Menu4::model()->findAll();
 <table class="table">
 	<thead>
 	<tr>
-		<th colspan="3"><a href="index.php?r=admin/menu4/create"><i class="fa fa-plus-circle"></i> Добавить</a></th>
+		<th colspan="3"><a href="<?= Yii::app()->createUrl('admin/menu4/create'); ?>"><i class="fa fa-plus-circle"></i> Добавить</a></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -30,8 +30,8 @@ $subcategories = Menu4::model()->findAll();
 		?>
 		<tr>
 			<td class="col-md-6"><?php echo $subcategory->name; ?> (<?php /*$category = Menu2::model()->findByPk($subcategory->parent_id); $i = Menu1::model()->findByPk($category->parent_id); echo $category->name." - ".$i->name; */?>)</td>
-			<td class="col-md-3"><a href="index.php?r=admin/menu4/update&id=<?php echo $subcategory->id;?>">Редактировать</a> </td>
-			<td class="col-md-3"><a href="index.php?r=admin/menu4/del&id=<?php echo $subcategory->id;?>">Удалить </a></td>
+			<td class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/menu4/update', array('id'=>$subcategory->id)) ?>">Редактировать</a> </td>
+			<td class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/menu4/del', array('id'=>$subcategory->id)) ?>">Удалить </a></td>
 		</tr>
 		<?php
 	}

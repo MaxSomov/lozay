@@ -46,7 +46,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php?r=site/logout">На сайт</a>
+            <a class="navbar-brand" href="<?= Yii::app()->createUrl('site/logout'); ?>">На сайт</a>
         </div>
         <!-- Top Menu Items -->
 <!--        <ul class="nav navbar-right top-nav">-->
@@ -156,26 +156,26 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav side-nav">
                 <li class="active">
-                    <a href="index.php?r=admin"><i class="fa fa-fw fa-dashboard"></i> Панель администратора</a>
+                    <a href="<?= Yii::app()->createUrl('admin'); ?>"><i class="fa fa-fw fa-dashboard"></i> Панель администратора</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/menu1"><i class="fa fa-fw fa-folder"></i> Меню 1</a>
+                    <a href="<?= Yii::app()->createUrl('admin/menu1') ?>"><i class="fa fa-fw fa-folder"></i> Меню 1</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/menu2"><i class="fa fa-fw fa-tag"></i> Меню 2</a>
+                    <a href="<?= Yii::app()->createUrl('admin/menu2') ?>"><i class="fa fa-fw fa-tag"></i> Меню 2</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/menu3"><i class="fa fa-fw fa-tags"></i> Меню 3</a>
+                    <a href="<?= Yii::app()->createUrl('admin/menu3') ?>"><i class="fa fa-fw fa-tags"></i> Меню 3</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/menu4"><i class="fa fa-fw fa-tags"></i> Еще меню</a>
+                    <a href="<?= Yii::app()->createUrl('admin/menu4') ?>"><i class="fa fa-fw fa-tags"></i> Еще меню</a>
                 </li>
                 <li>
-                    <a href="index.php?r=admin/post"><i class="fa fa-fw fa-file-text"></i> Статьи</a>
+                    <a href="<?= Yii::app()->createUrl('admin/post') ?>"><i class="fa fa-fw fa-file-text"></i> Статьи</a>
                 </li>
-                <li>
-                    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-line-chart"></i> Статистика</a>
-                </li>
+<!--                <li>-->
+<!--                    <a href="bootstrap-elements.html"><i class="fa fa-fw fa-line-chart"></i> Статистика</a>-->
+<!--                </li>-->
             </ul>
         </div>
         <!-- /.navbar-collapse -->

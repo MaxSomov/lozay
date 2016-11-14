@@ -27,7 +27,7 @@ if(count($nav)){
 					foreach ($nav as $item){
 						?>
 						<li>
-							<a href="index.php?r=menu4/view&id=<?php echo $item->id; ?>"><?php echo $item->name; ?></a>
+							<a href="<?= Yii::app()->createUrl('menu4/view', array('id'=>$item->id)); ?>"><?php echo $item->name; ?></a>
 						</li>
 					<?php
 					}
@@ -63,7 +63,7 @@ if(count($nav)){
 							</p>
 						</div>
 						<div class="post-more">
-							<a href="index.php?r=post/view&id=<?php echo $post->id; ?>" class="btn btn-small">Читать
+							<a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>" class="btn btn-small">Читать
 								далее</a>
 						</div>
 					</div>

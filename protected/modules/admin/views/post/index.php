@@ -14,7 +14,7 @@ $posts = Post::model()->findAll();
 <table class="table">
 	<thead>
 	<tr>
-		<th colspan="3"><a href="index.php?r=admin/post/create"><i class="fa fa-plus-circle"></i> Новая статья</a></th>
+		<th colspan="3"><a href="<?= Yii::app()->createUrl('admin/post/create'); ?>"><i class="fa fa-plus-circle"></i> Новая статья</a></th>
 	</tr>
 	</thead>
 	<tbody>
@@ -23,8 +23,8 @@ $posts = Post::model()->findAll();
 		?>
 		<tr>
 			<td class="col-md-6"><?php echo $post->head; ?></td>
-			<td class="col-md-3"><a href="index.php?r=admin/post/update&id=<?php echo $post->id;?>">Редактировать</a> </td>
-			<td class="col-md-3"><a href="index.php?r=admin/post/del&id=<?php echo $post->id;?>">Удалить </a></td>
+			<td class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/post/update', array('id'=>$post->id)); ?>">Редактировать</a> </td>
+			<td class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/post/del', array('id'=>$post->id)); ?>">Удалить </a></td>
 		</tr>
 		<?php
 	}
