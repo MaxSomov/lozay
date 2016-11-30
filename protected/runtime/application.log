@@ -631,3 +631,1265 @@ Stack trace:
 REQUEST_URI=/menu2/football
 HTTP_REFERER=http://lozay/
 ---
+2016/11/15 12:10:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:11:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:11:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:11:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:11:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:11:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:14:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:17:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:17:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:18:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:22:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:24:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:24:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:24:19 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:26:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:26:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:26:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:26:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:27:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:29:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:30:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:31:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:31:27 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "sb/css/bootstrap.min.css.map". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('sb/css/bootstra...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sb/css/bootstrap.min.css.map
+---
+2016/11/15 12:31:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:32:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:33:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:34:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:34:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:44:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:44:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:45:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:45:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:45:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:46:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:47:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:47:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:47:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:48:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:48:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:48:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:49:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:50:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:50:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:50:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:51:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:51:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:52:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:52:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "lozay". in /home/max/www/lozay/framework/web/CController.php:483
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(270): CController->missingAction('lozay')
+#1 /home/max/www/lozay/framework/web/CWebApplication.php(282): CController->run('lozay')
+#2 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/menu1/loz...')
+#3 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/max/www/lozay/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/menu1/lozay/admin
+HTTP_REFERER=http://lozay/admin/menu1/create
+---
+2016/11/15 12:53:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:53:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:54:37 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:56:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:56:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/menu/update/id/4". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/menu/upda...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/menu/update/id/4
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:57:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/menu/update/4". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/menu/upda...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/menu/update/4
+---
+2016/11/15 12:57:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:58:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:58:08 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:58:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:58:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 12:59:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:01:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:01:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:02:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:02:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:02:25 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "sb/css/bootstrap.min.css.map". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('sb/css/bootstra...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sb/css/bootstrap.min.css.map
+---
+2016/11/15 13:02:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:02:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:02:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:03:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 13:04:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:00:57 [error] [php] Undefined variable: menu3 (/home/max/www/lozay/protected/modules/admin/views/default/index.php:73)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php(43): DefaultController->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#6 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#12 /home/max/www/lozay/framework/web/CWebApplication.php(282): DefaultController->run()
+#13 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in /home/max/www/lozay/protected/modules/admin/views/default/index.php (73)
+in /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php (43)
+in /home/max/www/lozay/index.php (13)
+2016/11/15 14:01:15 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:01:29 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:01:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:01:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:01:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:01:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:02:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:02:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:02:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:03:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:03:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:03:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:03:47 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:05:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:05:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:05:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:07:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:09:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:09:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:09:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:10:04 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:10:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:10:47 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:11:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:11:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:11:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:11:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "sb/css/bootstrap.min.css.map". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('sb/css/bootstra...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sb/css/bootstrap.min.css.map
+---
+2016/11/15 14:12:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:12:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:12:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:12:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:12:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:13:21 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:13:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:14:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:14:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:14:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:14:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:14:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:17:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:18:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:19:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:19:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:19:33 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:19:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:20:50 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:21:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:21:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:21:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:22:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:22:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:38 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:45 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:23:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 14:24:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/15 16:01:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/17 11:16:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://lozay/site/login
+---
+2016/11/17 11:16:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/30 09:37:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://lozay/
+---
+2016/11/30 09:41:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://lozay/
+---
+2016/11/30 15:37:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/billing.php". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/billing.p...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/billing.php
+HTTP_REFERER=http://lozay/
+---
+2016/11/30 15:37:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "admin/gates.php". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/gates.php')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/admin/gates.php
+HTTP_REFERER=http://lozay/
+---
+2016/11/30 22:10:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/30 22:10:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/11/30 22:10:47 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---

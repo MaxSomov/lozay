@@ -58,7 +58,7 @@ class Menu3Controller extends Controller
 
     public function actionDel($id){
         $this->loadModel($id)->delete();
-        $this->redirect(array('index'));
+        $this->redirect(Yii::app()->createUrl('admin'));
     }
 
 	/**
@@ -76,7 +76,7 @@ class Menu3Controller extends Controller
 		{
 			$model->attributes=$_POST['Menu3'];
 			if($model->save())
-                $this->redirect(array('index'));
+                $this->redirect(Yii::app()->createUrl('admin'));
 		}
 
 		$this->render('create',array(

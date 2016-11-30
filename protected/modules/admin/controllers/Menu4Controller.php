@@ -46,7 +46,7 @@ class Menu4Controller extends Controller
 
     public function actionDel($id){
         $this->loadModel($id)->delete();
-        $this->redirect(array('index'));
+        $this->redirect(Yii::app()->createUrl('admin'));
     }
 
 	/**
@@ -80,7 +80,7 @@ class Menu4Controller extends Controller
             $model->menu2 = $array[1];
             $model->menu3 = $array[2];
 			if($model->save())
-				$this->redirect(array('index'));
+                $this->redirect(Yii::app()->createUrl('admin'));
 		}
 
 		$this->render('create',array(

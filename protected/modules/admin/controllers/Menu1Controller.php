@@ -55,7 +55,7 @@ class Menu1Controller extends Controller
         Post::model()->deleteAllByAttributes(array("menu1"=>$id));
         $this->loadModel($id)->delete();
 
-        $this->redirect(array('index'));
+        $this->redirect(Yii::app()->createUrl('admin'));
     }
 
 	/**
@@ -84,7 +84,7 @@ class Menu1Controller extends Controller
 		{
 			$model->attributes=$_POST['Menu1'];
 			if($model->save())
-                $this->redirect(array('index'));
+                $this->redirect(Yii::app()->createUrl('admin'));
 		}
 
 		$this->render('create',array(

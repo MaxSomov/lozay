@@ -112,7 +112,7 @@
         }
 
         a{
-            ;
+        ;
         }
     </style>
 </head>
@@ -122,21 +122,16 @@
     your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
     improve your experience.</p>
 <![endif]-->
-<div class="col-md-12" style="background: white">
-    <div class="col-md-1" style="background: white"></div>
-    <div class="col-md-7" style="background: white">
-        <img src="/mPurpose-master/img/logo.jpg" height="80px">
-    </div>
-    <form style="padding-top: 20px;" class="col-md-3" method="post" action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>">
+<div class="white" style="background: white">
+    <img src="/mPurpose-master/img/logo.jpg" height="80px" style="margin-left: 120px">
+    <form class="col-md-3" style="float: right; margin-top: 20px;" method="post" action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>">
         <div class="input-group">
             <span class="input-group-addon"><i class="fa fa-search"></i> </span>
             <input name="keyword" type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Поиск">
-<!--            <input type="submit" value="s">-->
+            <!--            <input type="submit" value="s">-->
         </div>
     </form>
-    <div class="col-md-1" style="background: white"></div>
 </div>
-<br><br><br><br>
 
 
 <!-- Navigation & Logo-->
@@ -147,7 +142,7 @@
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: 95%;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -156,9 +151,19 @@
             <a class="navbar-brand" href="#"></a>
         </div>
 
-
+        <style>
+            .navbar-right > li > a > i{
+                height: 50px;
+            }
+        </style>
 
         <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right"">
+            <li style="vertical-align: middle;"><a style="vertical-align: middle; width: 50px;" href="https://ok.ru" target="_blank"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-odnoklassniki-square fa-2x"></i> </a></li>
+            <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-vk fa-2x" ></i> </a></li>
+            <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-youtube fa-2x" ></i> </a></li>
+            <li><a href="" style="vertical-align: middle; width: 50px;"><i style="vertical-align: middle; position: absolute; top: 8px; left: 10px;" class="fa fa-twitter-square fa-2x"></i> </a></li>
+            </ul>
             <ul class="nav navbar-nav">
                 <li></li>
                 <li class=""><a href="http://lozay/<?php /*echo Yii::app()->createUrl(""); */?>">Главная</a></li>
@@ -221,15 +226,15 @@
 </div>
 
 
-<div class="section">
+<!--<div class="section">-->
 <?php
 echo $content;
 ?>
-</div>
+<!--</div>-->
 
 <!-- Footer -->
 <div class="footer">
-<!--    <div class="container">-->
+    <div class="container">
         <div class="row">
             <div class="col-footer col-md-3 col-xs-6">
                 <h3><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
@@ -237,18 +242,17 @@ echo $content;
             </div>
             <div class="col-footer col-md-3 col-xs-6">
                 <h3>Социальные сети</h3>
-                <div class="row"><h1 class="col-md-4"><a href="http://vk.com" target="_blank"><i class="fa fa-vk"></i> </a></h1>
-                    <h1 class="col-md-4"><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://ok.ru" target="_blank"><i class="fa fa-odnoklassniki"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i> </a>
-                    </h1></div>
-
+                <h1 class="col-md-4"><a href="http://vk.com" target="_blank"><i class="fa fa-vk"></i> </a></h1>
+                <h1 class="col-md-4"><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>
+                </h1>
+                <h1 class="col-md-4"><a href="http://ok.ru" target="_blank"><i class="fa fa-odnoklassniki"></i> </a>
+                </h1>
+                <h1 class="col-md-4"><a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i> </a>
+                </h1>
+                <h1 class="col-md-4"><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube"></i> </a>
+                </h1>
+                <h1 class="col-md-4"><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i> </a>
+                </h1>
             </div>
             <div class="col-footer col-md-3">
                 <h3><?php $footer = Footer2::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
@@ -266,10 +270,8 @@ echo $content;
                 </div>
             </div>
         </div>
-<!--    </div>-->
+    </div>
 </div>
-
-
 
 <!-- Javascripts -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

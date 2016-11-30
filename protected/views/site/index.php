@@ -4,9 +4,9 @@
 $this->pageTitle=Yii::app()->name;
 ?>
 
-<div class="container">
+<!--<div class="container">-->
 <div class="row">
-	<div class="col-md-3"></div>
+	<div class="col-md-2"></div>
 
 	<div class="col-md-6">
 		<?php
@@ -40,7 +40,7 @@ $this->pageTitle=Yii::app()->name;
 		</div>
 	</div>
 </div>
-</div>
+<!--</div>-->
 
 <!--<h1>Welcome to <i>--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</i></h1>-->
 <!---->
