@@ -3,45 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ea6bb60-9a91-4f6a-ac8e-8336d9a36d68" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer1Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer1Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer2Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer2Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer3Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Footer3Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu1Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu1Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu2Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu2Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu3Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu3Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu4Controller.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/Menu4Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/models/Footer1.php" afterPath="$PROJECT_DIR$/protected/modules/admin/models/Footer1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/models/Footer2.php" afterPath="$PROJECT_DIR$/protected/modules/admin/models/Footer2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/models/Footer3.php" afterPath="$PROJECT_DIR$/protected/modules/admin/models/Footer3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/create.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/update.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer1/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer1/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/create.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/update.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer2/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer2/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_search.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/_view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/create.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/update.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/footer3/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/footer3/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/gii-1.1.17/ModelCode.php" afterPath="$PROJECT_DIR$/protected/runtime/gii-1.1.17/ModelCode.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/pages/search.php" afterPath="$PROJECT_DIR$/protected/views/site/pages/search.php" />
     </list>
     <ignored path="lozay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,68 +28,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/searchstat/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="271" column="0" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1480533025264" expanded="true" signature="3246:3498" ph="..." />
-                <marker date="1480533025264" expanded="true" signature="3339:3367" ph="..." />
+                <marker date="1480536111060" expanded="true" signature="413:414" ph="..." />
+                <marker date="1480536111060" expanded="true" signature="422:539" ph="..." />
+                <marker date="1480536111060" expanded="true" signature="470:539" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+        <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/post/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-              <folding>
-                <marker date="1480532663667" expanded="true" signature="482:506" ph="..." />
-                <marker date="1480532663667" expanded="true" signature="523:535" ph="..." />
-                <marker date="1480532663667" expanded="true" signature="538:544" ph=" " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mPurpose-master/css/bootstrap.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2052">
-              <caret line="4270" column="25" selection-start-line="4270" selection-start-column="25" selection-end-line="4270" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/layouts/layout.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="225" column="6" selection-start-line="141" selection-start-column="0" selection-end-line="225" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1480502537147" expanded="true" signature="3242:3494" ph="..." />
-                <marker date="1480502537147" expanded="true" signature="3335:3363" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+            <state relative-caret-position="480">
+              <caret line="32" column="8" selection-start-line="9" selection-start-column="0" selection-end-line="32" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -137,11 +60,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/site/error.php" />
-        <option value="$PROJECT_DIR$/protected/components/UserIdentity.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/Cat3Controller.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CategoryController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/SubcategoryController.php" />
         <option value="$PROJECT_DIR$/mPurpose-master/.gitignore" />
         <option value="$PROJECT_DIR$/mPurpose-master/css/main.css" />
@@ -160,7 +79,6 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/protected/views/cat3/view.php" />
         <option value="$PROJECT_DIR$/protected/views/menu3/view.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/pages/search.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu1/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu2/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu3/index.php" />
@@ -183,11 +101,16 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/Menu2Controller.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/Menu3Controller.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/Menu4Controller.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/layout.php" />
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/default/statistics.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/SearchstatController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/pages/search.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/views/searchstat/index.php" />
       </list>
     </option>
   </component>
@@ -328,6 +251,32 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -347,6 +296,122 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="searchstat" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -484,12 +549,12 @@
       <workItem from="1479137122523" duration="1157000" />
       <workItem from="1479143819876" duration="10102000" />
       <workItem from="1479369233926" duration="598000" />
-      <workItem from="1480487755397" duration="7597000" />
+      <workItem from="1480487755397" duration="10701000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121812000" />
+    <option name="totallyTimeSpent" value="124916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -531,41 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="26" column="98" selection-start-line="26" selection-start-column="98" selection-end-line="26" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/about.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/post/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="68" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu1/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu1/_search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -633,13 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/post/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="83" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="83" />
         </state>
       </provider>
     </entry>
@@ -757,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/Menu1Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -792,16 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/default/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1675">
-          <caret line="117" column="3" selection-start-line="117" selection-start-column="3" selection-end-line="117" selection-end-column="3" />
-          <folding>
-            <marker date="1479209029566" expanded="true" signature="1569:1669" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu1/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -826,14 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu1/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -854,14 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -911,6 +901,96 @@
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1480533025264" expanded="true" signature="3246:3498" ph="..." />
             <marker date="1480533025264" expanded="true" signature="3339:3367" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/default/statistics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-645">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/default/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <marker date="1479209029566" expanded="true" signature="1569:1669" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/SearchstatController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="41" column="84" selection-start-line="41" selection-start-column="84" selection-end-line="41" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="188" column="5" selection-start-line="188" selection-start-column="5" selection-end-line="188" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/pages/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <marker date="1480535699063" expanded="true" signature="1341:1365" ph="..." />
+            <marker date="1480535699063" expanded="true" signature="1382:1394" ph="..." />
+            <marker date="1480535699063" expanded="true" signature="1397:1403" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/post/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="8" selection-start-line="9" selection-start-column="0" selection-end-line="32" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/searchstat/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <marker date="1480536111060" expanded="true" signature="413:414" ph="..." />
+            <marker date="1480536111060" expanded="true" signature="422:539" ph="..." />
+            <marker date="1480536111060" expanded="true" signature="470:539" ph="..." />
           </folding>
         </state>
       </provider>

@@ -39,7 +39,7 @@
         <li role="presentation"><a href="<?= Yii::app()->createUrl('admin'); ?>">Панель администратора</a></li>
         <li role="presentation"><a href="<?= Yii::app()->createUrl('site/logout'); ?>">На сайт</a></li>
         <li role="presentation"><a href="#">Сообщения</a></li>
-        <li role="presentation"><a href="#">Статистика</a></li>
+        <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/searchstat'); ?>">Статистика</a></li>
         <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/post'); ?>">Статьи</a></li>
     </ul>
 </div>

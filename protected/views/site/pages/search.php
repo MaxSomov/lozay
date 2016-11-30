@@ -9,7 +9,25 @@
             <h1>Результаты поиска <code><?php echo $_POST['keyword']; ?></code></h1>
             <?php
 
-            $match = addcslashes($_POST['keyword'], '%_');
+            $kw = strtolower(trim($_POST['keyword']));
+//            echo $kw;
+
+            if($kw!=""){
+                $results = SearchStat::model()->findByAttributes(array('keyword'=>$kw));
+                if(!isset($results)){
+                    $s = new SearchStat;
+                    $s->keyword = $kw;
+                    $s->count = 1;
+                    $s->last = time();
+                    $s->save();
+                }
+                else {
+                    $results->count++;
+                    $results->save();
+                }
+            }
+
+            $match = addcslashes($kw, '%_');
             $posts = Post::model()->findAll('content LIKE :match', array(':match'=>"%$match%"), array('order'=>'date DESC', 'limit'=>5));
 
             foreach ($posts as $post){
@@ -24,7 +42,7 @@
                         </p>
                     </div>
                     <div class="post-more">
-                        <a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post-id)); ?>" class="btn btn-small">Читать далее</a>
+                        <a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>" class="btn btn-small">Читать далее</a>
                     </div>
                 </div>
                 <?php
