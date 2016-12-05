@@ -6,30 +6,41 @@
 Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
 ?>
 
-<div class="container">
+<div class="span8 blog">
 
+    <!-- Blog Post 1 -->
+    <article>
+        <h3 class="title-bg"><a href=""><?= $model->head; ?></a></h3>
+        <div class="post-content">
 
-    <div class="col-md-9">
-        <div class="blog-post blog-single-post">
-            <div class="single-post-title">
-                <h3><?php echo $model->head; ?></h3>
+            <div class="post-body">
+                <?= $model->content; ?>
             </div>
-            <div class="single-post-info" style="background: #eee; color: #777; margin-top: 10px;">
-                <i class="fa fa-clock-o"></i><?php echo date('d.m.Y', $model->date); ?>
-            </div>
-            <div class="single-post-content">
-                <?php echo $model->content; ?>
-            </div>
-            <div class="post-comments">
 
+            <div class="post-summary-footer">
+                <ul class="post-data">
+                    <li><i class="icon-calendar"></i> <?= date('d/m/Y', $model->date); ?></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </article>
 
-    <div class="col-md-3">
-        <div class="blog-post blog-single-post">
-            <?php echo $model->adv; ?>
+</div><!--Close container row-->
+
+<!-- Blog Sidebar
+================================================== -->
+<div class="span4 sidebar">
+
+    <!--Search-->
+    <section>
+        <div class="input-append">
+            <form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
+                <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
+            </form>
         </div>
-    </div>
+    </section>
+
+    <!--Categories-->
+    <h5 class="title-bg"><?= $model->adv; ?></h5>
 
 </div>

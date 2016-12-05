@@ -2,11 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ea6bb60-9a91-4f6a-ac8e-8336d9a36d68" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon-114x114.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon-114x114.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon-72x72.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon-72x72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/apple-touch-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/author-avatar.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/author-avatar.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/back-top-btn.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/back-top-btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/container-bg.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/container-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/favicon.ico" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery-item-hover.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery-item-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery-item-icons.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery-item-icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/blog-med-img-1.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/blog-med-img-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-1.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-2.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-3.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-4.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-5.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/client-img-5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/flickr-img-1.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/flickr-img-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-3col.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-3col.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-4col-cir.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-4col-cir.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-4col.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-4col.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-6col.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-6col.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-full.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-1-full.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-13-6col.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-13-6col.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-14-6col.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-14-6col.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-2-thumb.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/gallery-img-2-thumb.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/post-img-1.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/post-img-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/slider-img-1.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/slider-img-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/thumbnail-270x130.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/thumbnail-270x130.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/thumbnail-270x300.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/gallery/thumbnail-270x300.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/glyphicons-halflings-white.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/glyphicons-halflings.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/location-map.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/location-map.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/page-bg-1.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/page-bg-1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/piccolo-footer-logo.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/piccolo-footer-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/piccolo-logo.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/piccolo-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/post-item-hover.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/post-item-hover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/default_thumb.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/default_thumb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/loader.gif" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/loader.gif" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_next.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_next.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_prev.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_prev.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_x.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_y.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/prettyPhoto/default/sprite_y.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/rnd-client-mask.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/rnd-client-mask.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/slider-caption-bg.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/slider-caption-bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/social-icons.png" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/social-icons.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/img/user-avatar.jpg" afterPath="$PROJECT_DIR$/WG Piccolo Theme/img/user-avatar.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/lozay.iml" afterPath="$PROJECT_DIR$/.idea/lozay.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/blog-single.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/blog-single.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/blog-style1.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/blog-style1.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/blog-style2.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/blog-style2.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/blog-style3.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/blog-style3.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/blog-style4.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/blog-style4.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap.css" afterPath="$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/css/custom-styles.css" afterPath="$PROJECT_DIR$/WG Piccolo Theme/css/custom-styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/css/prettyPhoto.css" afterPath="$PROJECT_DIR$/WG Piccolo Theme/css/prettyPhoto.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/css/style-ie.css" afterPath="$PROJECT_DIR$/WG Piccolo Theme/css/style-ie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/features.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/features.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/gallery-3col.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/gallery-3col.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/gallery-4col-circle.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/gallery-4col-circle.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/gallery-4col.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/gallery-4col.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/gallery-6col.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/gallery-6col.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/gallery-single.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/gallery-single.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/index-gallery.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/index-gallery.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/index-slider.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/index-slider.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/index.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/index.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/js/bootstrap.js" afterPath="$PROJECT_DIR$/WG Piccolo Theme/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.custom.js" afterPath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.prettyPhoto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.quicksand.js" afterPath="$PROJECT_DIR$/WG Piccolo Theme/js/jquery.quicksand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/page-contact.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/page-contact.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/page-double-sidebar.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/page-double-sidebar.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/page-full-width.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/page-full-width.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/page-left-sidebar.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/page-left-sidebar.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WG Piccolo Theme/page-right-sidebar.htm" afterPath="$PROJECT_DIR$/WG Piccolo Theme/page-right-sidebar.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/SearchStat.php" afterPath="$PROJECT_DIR$/protected/models/SearchStat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/SearchstatController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/SearchstatController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/models/SearchStat.php" afterPath="$PROJECT_DIR$/protected/modules/admin/models/SearchStat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_form.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_search.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_search.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/_view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/admin.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/create.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/create.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/index.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/update.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/view.php" afterPath="$PROJECT_DIR$/protected/modules/admin/views/searchstat/view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/layout.php" afterPath="$PROJECT_DIR$/protected/views/layouts/layout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/post/view.php" afterPath="$PROJECT_DIR$/protected/views/post/view.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/index.php" afterPath="$PROJECT_DIR$/protected/views/site/index.php" />
     </list>
     <ignored path="lozay.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,20 +115,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="1438" column="27" selection-start-line="1438" selection-start-column="25" selection-end-line="1438" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+            <state relative-caret-position="75">
+              <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1480970738722" expanded="true" signature="3321:3573" ph="..." />
-                <marker date="1480970738722" expanded="true" signature="3414:3442" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#14869#14875#0#HTML" expanded="true" />
+                <element signature="e#14875#14881#0#HTML" expanded="true" />
+                <element signature="e#14881#14887#0#HTML" expanded="true" />
+                <element signature="e#14888#14894#0#HTML" expanded="true" />
+                <element signature="e#14894#14900#0#HTML" expanded="true" />
+                <element signature="e#14900#14906#0#HTML" expanded="true" />
+                <element signature="e#14930#14936#0#HTML" expanded="true" />
+                <element signature="e#14936#14942#0#HTML" expanded="true" />
+                <element signature="e#14942#14948#0#HTML" expanded="true" />
+                <element signature="e#14949#14955#0#HTML" expanded="true" />
+                <element signature="e#14955#14961#0#HTML" expanded="true" />
+                <element signature="e#14961#14967#0#HTML" expanded="true" />
+                <element signature="e#14990#14996#0#HTML" expanded="true" />
+                <element signature="e#14996#15002#0#HTML" expanded="true" />
+                <element signature="e#15002#15008#0#HTML" expanded="true" />
+                <element signature="e#15009#15015#0#HTML" expanded="true" />
+                <element signature="e#15015#15021#0#HTML" expanded="true" />
+                <element signature="e#15021#15027#0#HTML" expanded="true" />
+                <element signature="e#15047#15053#0#HTML" expanded="true" />
+                <element signature="e#15053#15059#0#HTML" expanded="true" />
+                <element signature="e#15059#15065#0#HTML" expanded="true" />
+                <element signature="e#15066#15072#0#HTML" expanded="true" />
+                <element signature="e#15072#15078#0#HTML" expanded="true" />
+                <element signature="e#15078#15084#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="54" column="10" selection-start-line="40" selection-start-column="4" selection-end-line="54" selection-end-column="10" />
+              <folding>
+                <marker date="1480975347635" expanded="true" signature="1115:1139" ph="..." />
+                <marker date="1480975347635" expanded="true" signature="1156:1168" ph="..." />
+                <marker date="1480975347635" expanded="true" signature="1171:1177" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/post/view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom-styles.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WG Piccolo Theme/css/custom-styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-28">
+              <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mPurpose-master/css/main.css" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu1/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu2/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu3/_form.php" />
@@ -63,7 +215,6 @@
         <option value="$PROJECT_DIR$/protected/controllers/Menu3Controller.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/menu4/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/post/_form.php" />
-        <option value="$PROJECT_DIR$/protected/views/post/view.php" />
         <option value="$PROJECT_DIR$/css/template-blue.css" />
         <option value="$PROJECT_DIR$/mPurpose-master/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -93,7 +244,6 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/Menu4Controller.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/default/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/layout.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/default/statistics.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DefaultController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/layouts/main.php" />
@@ -103,7 +253,10 @@
         <option value="$PROJECT_DIR$/protected/modules/admin/views/category/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/cat3/_form.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/views/cat3/index.php" />
+        <option value="$PROJECT_DIR$/WG Piccolo Theme/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/protected/views/post/view.php" />
       </list>
     </option>
   </component>
@@ -190,6 +343,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WG Piccolo Theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WG Piccolo Theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,6 +476,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="post" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lozay" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -339,7 +546,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
@@ -431,12 +638,12 @@
       <workItem from="1479143819876" duration="10102000" />
       <workItem from="1479369233926" duration="598000" />
       <workItem from="1480487755397" duration="10867000" />
-      <workItem from="1480969059966" duration="1676000" />
+      <workItem from="1480969059966" duration="6723000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126758000" />
+    <option name="totallyTimeSpent" value="131805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
@@ -478,27 +685,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="33" column="84" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/menu2/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/post/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/modules/admin/views/post/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -725,13 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2052">
           <caret line="4270" column="25" selection-start-line="4270" selection-start-column="25" selection-end-line="4270" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -832,19 +1011,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WG Piccolo Theme/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="1438" column="27" selection-start-line="1438" selection-start-column="25" selection-end-line="1438" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WG Piccolo Theme/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
+        <state relative-caret-position="75">
+          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1480970738722" expanded="true" signature="3321:3573" ph="..." />
-            <marker date="1480970738722" expanded="true" signature="3414:3442" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#14869#14875#0#HTML" expanded="true" />
+            <element signature="e#14875#14881#0#HTML" expanded="true" />
+            <element signature="e#14881#14887#0#HTML" expanded="true" />
+            <element signature="e#14888#14894#0#HTML" expanded="true" />
+            <element signature="e#14894#14900#0#HTML" expanded="true" />
+            <element signature="e#14900#14906#0#HTML" expanded="true" />
+            <element signature="e#14930#14936#0#HTML" expanded="true" />
+            <element signature="e#14936#14942#0#HTML" expanded="true" />
+            <element signature="e#14942#14948#0#HTML" expanded="true" />
+            <element signature="e#14949#14955#0#HTML" expanded="true" />
+            <element signature="e#14955#14961#0#HTML" expanded="true" />
+            <element signature="e#14961#14967#0#HTML" expanded="true" />
+            <element signature="e#14990#14996#0#HTML" expanded="true" />
+            <element signature="e#14996#15002#0#HTML" expanded="true" />
+            <element signature="e#15002#15008#0#HTML" expanded="true" />
+            <element signature="e#15009#15015#0#HTML" expanded="true" />
+            <element signature="e#15015#15021#0#HTML" expanded="true" />
+            <element signature="e#15021#15027#0#HTML" expanded="true" />
+            <element signature="e#15047#15053#0#HTML" expanded="true" />
+            <element signature="e#15053#15059#0#HTML" expanded="true" />
+            <element signature="e#15059#15065#0#HTML" expanded="true" />
+            <element signature="e#15066#15072#0#HTML" expanded="true" />
+            <element signature="e#15072#15078#0#HTML" expanded="true" />
+            <element signature="e#15078#15084#0#HTML" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="54" column="10" selection-start-line="40" selection-start-column="4" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <marker date="1480975347635" expanded="true" signature="1115:1139" ph="..." />
+            <marker date="1480975347635" expanded="true" signature="1156:1168" ph="..." />
+            <marker date="1480975347635" expanded="true" signature="1171:1177" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/post/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -5,54 +5,57 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <!--<div class="container">-->
-<div class="row">
-	<div class="col-md-2"></div>
 
-	<div class="col-md-6">
+	<div class="span8">
 		<?php
 
 		$posts = Post::model()->findAll(array('order'=>'date DESC', 'limit'=>5));
 
 		foreach ($posts as $post){
 			?>
-		<div class="blog-post">
-			<div class="post-title">
-				<h2><?php echo $post->head; ?></h2>
-			</div>
-			<div class="post-summary">
-				<p>
-				<?php echo explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content)[0];?>
-				</p>
-			</div>
-			<div class="post-more">
-				<a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>" class="btn btn-small">Читать далее</a>
-			</div>
-		</div>
+
+
+			<article>
+				<div class="row">
+					<div class="span2 blog-style-2">
+						<h4 class="title-bg"><?= date('d/m/Y', $post->date); ?></h4>
+<!--						<ul class="post-data">-->
+<!--							<li><i class="icon-user"></i> <a href="#">Admin</a></li>-->
+<!--							<li><i class="icon-comment"></i> <a href="#">5 Comments</a></li>-->
+<!--							<li><i class="icon-tags"></i> <a href="#">photoshop</a>, <a href="#">tutorials</a>, <a href="#">illustration</a>, <a href="#">events</a></li>-->
+<!--						</ul>-->
+						<a class="btn btn-small btn-inverse" type="button" href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>">Читать далее</a>
+					</div>
+					<div class="span6">
+						<h3 class="title-bg"><a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>"><?= $post->head; ?></a></h3>
+						<p><?php echo explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $post->content)[0];?></p>
+					</div>
+				</div>
+			</article>
 		<?php
 		}
 
 		?>
 	</div>
 
-	<div class="col-md-3">
-		<div class="blog-post blog-single-post">
-		Реклама
-		</div>
-	</div>
-</div>
-<!--</div>-->
+	<div class="span4 sidebar">
 
-<!--<h1>Welcome to <i>--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</i></h1>-->
-<!---->
-<!--<p>Congratulations! You have successfully created your Yii application.</p>-->
-<!---->
-<!--<p>You may change the content of this page by modifying the following two files:</p>-->
-<!--<ul>-->
-<!--	<li>View file: <code>--><?php //echo __FILE__; ?><!--</code></li>-->
-<!--	<li>Layout file: <code>--><?php //echo $this->getLayoutFile('main'); ?><!--</code></li>-->
-<!--</ul>-->
-<!---->
-<!--<p>For more details on how to further develop this application, please read-->
-<!--the <a href="http://www.yiiframework.com/doc/">documentation</a>.-->
-<!--Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,-->
-<!--should you have any questions.</p>-->
+		<!--Search-->
+		<section>
+			<div class="input-append">
+				<form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
+					<input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
+				</form>
+			</div>
+		</section>
+
+		<!--Categories-->
+		<h5 class="title-bg">Реклама</h5>
+
+	</div>
+
+
+
+
+
+

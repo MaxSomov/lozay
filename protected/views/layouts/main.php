@@ -1,291 +1,300 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Lozay</title>
-    <meta name="description" content="">
-<!--    <meta name="viewport" content="width=device-width">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Piccolo Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/mPurpose-master/css/icomoon-social.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <!-- CSS
+    ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.css">
 
-    <link rel="stylesheet" href="/mPurpose-master/css/leaflet.css"/>
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="/mPurpose-master/css/leaflet.ie.css"/>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.css"/>
     <![endif]-->
-    <link rel="stylesheet" href="/mPurpose-master/css/main.css">
 
-    <link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css">
+    <!-- CSS
+================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/prettyPhoto.css" />
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/flexslider.css" />
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.css">
 
-    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.css"/>
+    <![endif]-->
 
-    <link rel="stylesheet" href="/css/template-blue.css">
+    <!-- Favicons
+    ================================================== -->
+<!--    <link rel="shortcut icon" href="img/favicon.ico">-->
+<!--    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">-->
+<!--    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">-->
+<!--    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">-->
 
-    <script src="/mPurpose-master/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <style>
+    <!-- JS
+    ================================================== -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="/WG%20Piccolo%20Theme/js/bootstrap.js"></script>
+    <script src="/WG%20Piccolo%20Theme/js/jquery.prettyPhoto.js"></script>
+    <script src="/WG%20Piccolo%20Theme/js/jquery.flexslider.js"></script>
+    <script src="/WG%20Piccolo%20Theme/js/jquery.custom.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
 
-        .container{
-            width:960px !important;
-        }
+            $("#btn-blog-next").click(function () {
+                $('#blogCarousel').carousel('next')
+            });
+            $("#btn-blog-prev").click(function () {
+                $('#blogCarousel').carousel('prev')
+            });
 
-        .dropdown-submenu {
-            position: relative;
-        }
+            $("#btn-client-next").click(function () {
+                $('#clientCarousel').carousel('next')
+            });
+            $("#btn-client-prev").click(function () {
+                $('#clientCarousel').carousel('prev')
+            });
 
-        .navbar-default {
-            background: #fff;
-            height: 50px;
-        }
+        });
 
-        .navbar-nav li a {
-            background: #fff;
-            font-size: auto;
-        }
+        $(window).load(function(){
 
-        .navbar-nav {
-            height: 50px;
-
-        }
-
-        .navbar-nav li a {
-            height: 48px;
-            font-size: 17px;
-
-        }
-
-        .navbar-nav li a:hover {
-            background: #fff;
-            color: #3376BC;
-        }
-
-        .dropdown-submenu > .dropdown-menu {
-            top: 0;
-            left: 100%;
-            margin-top: -6px;
-            margin-left: -1px;
-            -webkit-border-radius: 0 6px 6px 6px;
-            -moz-border-radius: 0 6px 6px;
-            border-radius: 0 6px 6px 6px;
-        }
-
-        .dropdown-submenu:hover > .dropdown-menu {
-            display: block;
-        }
-
-        .dropdown-submenu > a:after {
-            display: block;
-            content: " ";
-            float: right;
-            width: 0;
-            height: 0;
-            border-color: transparent;
-            border-style: solid;
-            border-width: 5px 0 5px 5px;
-            border-left-color: #3376BC;
-            margin-top: 5px;
-            margin-right: -10px;
-            border-left-color: #777;
-        }
-
-        .dropdown-submenu:hover > a:after {
-            border-left-color: #3376BC;
-        }
-
-        .dropdown-submenu.pull-left {
-            float: none;
-        }
-
-        .navbar-nav > li > a{
-            color: #000;
-        }
-
-        .dropdown-submenu.pull-left > .dropdown-menu {
-            left: -100%;
-            margin-left: 10px;
-            -webkit-border-radius: 6px 0 6px 6px;
-            -moz-border-radius: 6px 0 6px 6px;
-            border-radius: 6px 0 6px 6px;
-        }
-
-        a{
-            ;
-        }
-    </style>
-</head>
-<body>
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
-    improve your experience.</p>
-<![endif]-->
-<div class="col-md-12" style="background: white">
-    <div class="col-md-1" style="background: white"></div>
-    <div class="col-md-7" style="background: white">
-        <img src="/mPurpose-master/img/logo.jpg" height="80px">
-    </div>
-    <form style="padding-top: 20px;" class="col-md-3" method="post" action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>">
-        <div class="input-group">
-            <span class="input-group-addon"><i class="fa fa-search"></i> </span>
-            <input name="keyword" type="text" class="form-control" id="inputGroupSuccess3" aria-describedby="inputGroupSuccess3Status" placeholder="Поиск">
-<!--            <input type="submit" value="s">-->
-        </div>
-    </form>
-    <div class="col-md-1" style="background: white"></div>
-</div>
-<br><br><br><br>
-
-
-<!-- Navigation & Logo-->
-
-
-
-
-<div class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-        </div>
-
-
-
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li></li>
-                <li class=""><a href="http://lozay/<?php /*echo Yii::app()->createUrl(""); */?>">Главная</a></li>
-                <?php
-                $menu1s = Menu1::model()->findAll();
-                foreach ($menu1s as $menu1) {
-                    $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
-                    if (count($menu2s) == 0) {
-                        ?>
-                        <li>
-                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></a>
-                        </li>
-                        <?php
-                    } else {
-                        ?>
-                        <li>
-                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>" class="dropdown-toggle"
-                               data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
-                            <ul class="dropdown-menu multi-level">
-                                <?php
-                                foreach ($menu2s as $menu2) {
-                                    $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
-                                    if (count($menu3s) == 0) {
-                                        ?>
-                                        <li>
-                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"><?php echo $menu2->name; ?></a>
-                                        </li>
-                                        <?php
-                                    } else {
-                                        ?>
-                                        <li class="dropdown-submenu">
-                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
-                                               class="dropdown-toggle"
-                                               data-toggle="dropdown"><?php echo $menu2->name; ?></a>
-                                            <ul class="dropdown-menu">
-                                                <?php
-                                                foreach ($menu3s as $menu3) {
-                                                    ?>
-                                                    <li>
-                                                        <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>"><?php echo $menu3->name; ?></a>
-                                                    </li>
-                                                    <?php
-                                                }
-                                                ?>
-                                            </ul>
-                                        </li>
-                                        <?php
-                                    }
-                                }
-                                ?>
-                            </ul>
-                        </li>
-                        <?php
-                    }
+            $('.flexslider').flexslider({
+                animation: "slide",
+                slideshow: true,
+                start: function(slider){
+                    $('body').removeClass('loading');
                 }
-                ?>
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+<div class="color-bar-1"></div>
+<div class="color-bar-2 color-bg"></div>
+
+<div class="container">
+
+    <div class="row header" style="background: white;"><!-- Begin Header -->
+
+        <!-- Logo
+        ================================================== -->
+        <div class="span8">
+            <a href="http://lozay/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px" alt="" /></a>
+<!--            <h5>Big Things... Small Packages</h5>-->
+        </div>
+
+        <div class="span4" style="margin-top: 20px;">
+            <ul class="social-icons">
+                <li><a href="#" class="social-icon facebook"></a></li>
+                <li><a href="#" class="social-icon twitter"></a></li>
+                <li><a href="#" class="social-icon dribble"></a></li>
+                <li><a href="#" class="social-icon rss"></a></li>
+                <li><a href="#" class="social-icon forrst"></a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>
+
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span12 navigation" style="margin-top: 5px; margin-bottom: 0;">
+            <div class="navbar hidden-phone">
+
+                <ul class="nav">
+                    <li>
+                        <a href="http://lozay/">Главная</a>
+                    </li>
+
+                    <?php
+                    $menu1s = Menu1::model()->findAll();
+                    foreach ($menu1s as $menu1) {
+                        $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
+                        if (count($menu2s) == 0) {
+                            ?>
+                            <li>
+                                <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></a>
+                            </li>
+                            <?php
+                        } else {
+                            ?>
+                            <li class="dropdown">
+                                <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>" class="dropdown-toggle"
+                                   data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
+                                <ul class="dropdown-menu multi-level">
+                                    <?php
+                                    foreach ($menu2s as $menu2) {
+                                        $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
+                                        if (count($menu3s) == 0) {
+                                            ?>
+                                            <li>
+                                                <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"><?php echo $menu2->name; ?></a>
+                                            </li>
+                                            <?php
+                                        } else {
+                                            ?>
+                                            <li class="dropdown-submenu">
+                                                <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
+                                                   class="dropdown-toggle"
+                                                   data-toggle="dropdown"><?php echo $menu2->name; ?></a>
+                                                <ul class="dropdown-menu">
+                                                    <?php
+                                                    foreach ($menu3s as $menu3) {
+                                                        ?>
+                                                        <li>
+                                                            <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>"><?php echo $menu3->name; ?></a>
+                                                        </li>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                                </ul>
+                                            </li>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                </ul>
+                            </li>
+                            <?php
+                        }
+                    }
+                    ?>
+                </ul>
+
+            </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+                <div class="mobile-nav-select">
+                    <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                        <option value="">Navigate...</option>
+                        <option value="index.htm">Home</option>
+                        <option value="index.htm">- Full Page</option>
+                        <option value="index-gallery.htm">- Gallery Only</option>
+                        <option value="index-slider.htm">- Slider Only</option>
+                        <option value="features.htm">Features</option>
+                        <option value="page-full-width.htm">Pages</option>
+                        <option value="page-full-width.htm">- Full Width</option>
+                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
+                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
+                        <option value="page-double-sidebar.htm">- Double Sidebar</option>
+                        <option value="gallery-4col.htm">Gallery</option>
+                        <option value="gallery-3col.htm">- 3 Column</option>
+                        <option value="gallery-4col.htm">- 4 Column</option>
+                        <option value="gallery-6col.htm">- 6 Column</option>
+                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
+                        <option value="gallery-single.htm">- Gallery Single</option>
+                        <option value="blog-style1.htm">Blog</option>
+                        <option value="blog-style1.htm">- Blog Style 1</option>
+                        <option value="blog-style2.htm">- Blog Style 2</option>
+                        <option value="blog-style3.htm">- Blog Style 3</option>
+                        <option value="blog-style4.htm">- Blog Style 4</option>
+                        <option value="blog-single.htm">- Blog Single</option>
+                        <option value="page-contact.htm">Contact</option>
+                    </select>
+                </div>
+            </form>
+
+        </div>
+
+    </div><!-- End Header -->
+
+    <!-- Blog Content
+    ================================================== -->
+    <div class="row">
+
+        <?= $content; ?>
+
     </div>
-</div>
 
+</div> <!-- End Container -->
 
-<div class="section">
-<?php
-echo $content;
-?>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-<!--    <div class="container">-->
-        <div class="row">
-            <div class="col-footer col-md-3 col-md-6">
-                <h3><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?>
+<!-- Footer Area
+    ================================================== -->
+<div class="footer-container"><!-- Begin Footer -->
+    <div class="container">
+        <div class="row footer-row">
+            <div class="span3 footer-col">
+                <h5>About Us</h5>
+                <img src="/WG%20Piccolo%20Theme/img/piccolo-footer-logo.png" alt="Piccolo" /><br /><br />
+                <address>
+                    <strong>Design Team</strong><br />
+                    123 Main St, Suite 500<br />
+                    New York, NY 12345<br />
+                </address>
+                <ul class="social-icons">
+                    <li><a href="#" class="social-icon facebook"></a></li>
+                    <li><a href="#" class="social-icon twitter"></a></li>
+                    <li><a href="#" class="social-icon dribble"></a></li>
+                    <li><a href="#" class="social-icon rss"></a></li>
+                    <li><a href="#" class="social-icon forrst"></a></li>
+                </ul>
             </div>
-            <div class="col-footer col-md-3 col-md-6">
-                <h3>Социальные сети</h3>
-                <div class="row"><h1 class="col-md-4"><a href="http://vk.com" target="_blank"><i class="fa fa-vk"></i> </a></h1>
-                    <h1 class="col-md-4"><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://ok.ru" target="_blank"><i class="fa fa-odnoklassniki"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://instagram.com" target="_blank"><i class="fa fa-instagram"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://youtube.com" target="_blank"><i class="fa fa-youtube"></i> </a>
-                    </h1>
-                    <h1 class="col-md-4"><a href="http://twitter.com" target="_blank"><i class="fa fa-twitter"></i> </a>
-                    </h1></div>
-
+            <div class="span3 footer-col">
+                <h5>Latest Tweets</h5>
+                <ul>
+                    <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
+                    <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</li>
+                </ul>
             </div>
-            <div class="col-footer col-md-3">
-                <h3><?php $footer = Footer2::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?>
+            <div class="span3 footer-col">
+                <h5>Latest Posts</h5>
+                <ul class="post-list">
+                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                    <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
+                    <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
+                    <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
+                    <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
+                </ul>
             </div>
-            <div class="col-footer col-md-3">
-                <h3><?php $footer = Footer3::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?>
+            <div class="span3 footer-col">
+                <h5>Flickr Photos</h5>
+                <ul class="img-feed">
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
+                </ul>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="footer-copyright">
-                    © <?php echo date('Y', time()); ?> Lozay.
+
+        <div class="row"><!-- Begin Sub Footer -->
+            <div class="span12 footer-col footer-sub">
+                <div class="row no-margin">
+                    <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                    <div class="span6">
+                            <span class="right">
+                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
+                            </span>
+                    </div>
                 </div>
             </div>
-        </div>
-<!--    </div>-->
-</div>
+        </div><!-- End Sub Footer -->
 
+    </div>
+</div><!-- End Footer -->
 
-
-<!-- Javascripts -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="/mPurpose-master/js/bootstrap.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
-<script src="/mPurpose-master/js/jquery.fitvids.js"></script>
-<script src="/mPurpose-master/js/jquery.sequence-min.js"></script>
-<script src="/mPurpose-master/js/jquery.bxslider.js"></script>
-<script src="/mPurpose-master/js/main-menu.js"></script>
-<script src="/mPurpose-master/js/template.js"></script>
+<!-- Scroll to Top -->
+<div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
 
 </body>
 </html>
