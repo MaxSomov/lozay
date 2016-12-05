@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Lozay</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+<!--    <meta name="viewport" content="width=device-width">-->
 
     <link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css">
     <link rel="stylesheet" href="/mPurpose-master/css/icomoon-social.css">
@@ -32,6 +32,11 @@
 
     <script src="/mPurpose-master/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <style>
+
+        .container{
+            width:960px !important;
+        }
+
         .dropdown-submenu {
             position: relative;
         }
@@ -147,7 +152,7 @@
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-right: 95%;">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -231,11 +236,11 @@ echo $content;
 <div class="footer">
 <!--    <div class="container">-->
         <div class="row">
-            <div class="col-footer col-md-3 col-xs-6">
+            <div class="col-footer col-md-3 col-md-6">
                 <h3><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
                 <?php if (isset($footer)) echo $footer->content; ?>
             </div>
-            <div class="col-footer col-md-3 col-xs-6">
+            <div class="col-footer col-md-3 col-md-6">
                 <h3>Социальные сети</h3>
                 <div class="row"><h1 class="col-md-4"><a href="http://vk.com" target="_blank"><i class="fa fa-vk"></i> </a></h1>
                     <h1 class="col-md-4"><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>

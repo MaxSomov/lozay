@@ -236,11 +236,11 @@ echo $content;
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-footer col-md-3 col-xs-6">
+            <div class="col-footer col-md-3 col-md-6">
                 <h3><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
                 <?php if (isset($footer)) echo $footer->content; ?>
             </div>
-            <div class="col-footer col-md-3 col-xs-6">
+            <div class="col-footer col-md-3 col-md-6">
                 <h3>Социальные сети</h3>
                 <h1 class="col-md-4"><a href="http://vk.com" target="_blank"><i class="fa fa-vk"></i> </a></h1>
                 <h1 class="col-md-4"><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i> </a>
