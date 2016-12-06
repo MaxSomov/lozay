@@ -39,19 +39,7 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 
 	<div class="span4 sidebar">
-
-		<!--Search-->
-		<section>
-			<div class="input-append">
-				<form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
-					<input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
-				</form>
-			</div>
-		</section>
-
-		<!--Categories-->
-		<h5 class="title-bg">Реклама</h5>
-
+		<h5 class="title-bg" style="margin-top: 0;">Реклама</h5>
 	</div>
 
 

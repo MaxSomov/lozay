@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Piccolo Theme</title>
+    <title>Lozay</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3376BC">
 
     <!-- CSS
     ================================================== -->
@@ -26,6 +27,7 @@
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/prettyPhoto.css" />
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/flexslider.css" />
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.css">
+    <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -78,6 +80,8 @@
 
     </script>
 
+
+
 </head>
 
 <body>
@@ -95,19 +99,14 @@
 <!--            <h5>Big Things... Small Packages</h5>-->
         </div>
 
-        <div class="span4" style="margin-top: 20px;">
-            <ul class="social-icons">
-                <li><a href="#" class="social-icon facebook"></a></li>
-                <li><a href="#" class="social-icon twitter"></a></li>
-                <li><a href="#" class="social-icon dribble"></a></li>
-                <li><a href="#" class="social-icon rss"></a></li>
-                <li><a href="#" class="social-icon forrst"></a></li>
-            </ul>
-        </div>
+
+
+
+
 
         <!-- Main Navigation
         ================================================== -->
-        <div class="span12 navigation" style="margin-top: 5px; margin-bottom: 0;">
+        <div class="span8 navigation" style="margin-top: 5px; margin-bottom: 0;">
             <div class="navbar hidden-phone">
 
                 <ul class="nav">
@@ -146,7 +145,7 @@
                                                 <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
                                                    class="dropdown-toggle"
                                                    data-toggle="dropdown"><?php echo $menu2->name; ?></a>
-                                                <ul class="dropdown-menu">
+                                                <ul class="dropdown-menu" style="display: none;">
                                                     <?php
                                                     foreach ($menu3s as $menu3) {
                                                         ?>
@@ -177,34 +176,49 @@
             <form action="#" id="mobile-nav" class="visible-phone">
                 <div class="mobile-nav-select">
                     <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                        <option value="">Navigate...</option>
-                        <option value="index.htm">Home</option>
-                        <option value="index.htm">- Full Page</option>
-                        <option value="index-gallery.htm">- Gallery Only</option>
-                        <option value="index-slider.htm">- Slider Only</option>
-                        <option value="features.htm">Features</option>
-                        <option value="page-full-width.htm">Pages</option>
-                        <option value="page-full-width.htm">- Full Width</option>
-                        <option value="page-right-sidebar.htm">- Right Sidebar</option>
-                        <option value="page-left-sidebar.htm">- Left Sidebar</option>
-                        <option value="page-double-sidebar.htm">- Double Sidebar</option>
-                        <option value="gallery-4col.htm">Gallery</option>
-                        <option value="gallery-3col.htm">- 3 Column</option>
-                        <option value="gallery-4col.htm">- 4 Column</option>
-                        <option value="gallery-6col.htm">- 6 Column</option>
-                        <option value="gallery-4col-circle.htm">- Gallery 4 Col Round</option>
-                        <option value="gallery-single.htm">- Gallery Single</option>
-                        <option value="blog-style1.htm">Blog</option>
-                        <option value="blog-style1.htm">- Blog Style 1</option>
-                        <option value="blog-style2.htm">- Blog Style 2</option>
-                        <option value="blog-style3.htm">- Blog Style 3</option>
-                        <option value="blog-style4.htm">- Blog Style 4</option>
-                        <option value="blog-single.htm">- Blog Single</option>
-                        <option value="page-contact.htm">Contact</option>
+                        <option value="">Меню...</option>
+                        <option value="http://lozay">Главная</option>
+                        <?php
+                        foreach ($menu1s as $menu1) {
+                        $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
+                        ?>
+                            <option value="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></option>
+                                    <?php
+                                    foreach ($menu2s as $menu2) {
+                                        $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
+                                            ?>
+                                                <option value="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>">- <?php echo $menu2->name; ?></option>
+                                                    <?php
+                                                    foreach ($menu3s as $menu3) {
+                                                        ?>
+                                                            <option value="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>">- - <?php echo $menu3->name; ?></option>
+                                                        <?php
+                                                    }
+                                                    ?>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
                     </select>
                 </div>
             </form>
 
+        </div>
+
+        <div class="span4">
+            <section>
+                <div class="input-append">
+                    <form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
+                        <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
+                    </form>
+                </div>
+            </section>
+            <!--            <ul class="social-icons" style="font-size: 20pt; text-align: right;">-->
+            <!--                <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>-->
+            <!--                <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>-->
+            <!--                <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>-->
+            <!--                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>-->
+            <!--            </ul>-->
         </div>
 
     </div><!-- End Header -->
@@ -225,65 +239,35 @@
     <div class="container">
         <div class="row footer-row">
             <div class="span3 footer-col">
-                <h5>About Us</h5>
-                <img src="/WG%20Piccolo%20Theme/img/piccolo-footer-logo.png" alt="Piccolo" /><br /><br />
-                <address>
-                    <strong>Design Team</strong><br />
-                    123 Main St, Suite 500<br />
-                    New York, NY 12345<br />
-                </address>
-                <ul class="social-icons">
-                    <li><a href="#" class="social-icon facebook"></a></li>
-                    <li><a href="#" class="social-icon twitter"></a></li>
-                    <li><a href="#" class="social-icon dribble"></a></li>
-                    <li><a href="#" class="social-icon rss"></a></li>
-                    <li><a href="#" class="social-icon forrst"></a></li>
+                <h5>Контакты</h5>
+                <ul class="social-icons" style="font-size: 30pt;">
+                    <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>
+                    <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>
+                    <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
                 </ul>
             </div>
             <div class="span3 footer-col">
-                <h5>Latest Tweets</h5>
-                <ul>
-                    <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                    <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
-                    <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</li>
-                </ul>
+                <h5><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h5>
+                <?php if (isset($footer)) echo $footer->content; ?>
             </div>
             <div class="span3 footer-col">
-                <h5>Latest Posts</h5>
-                <ul class="post-list">
-                    <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                    <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
-                    <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
-                    <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
-                    <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
-                </ul>
+                <h5><?php $footer = Footer2::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h5>
+                <?php if (isset($footer)) echo $footer->content; ?>
             </div>
             <div class="span3 footer-col">
-                <h5>Flickr Photos</h5>
-                <ul class="img-feed">
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                    <li><a href="#"><img src="/WG%20Piccolo%20Theme/img/gallery/flickr-img-1.jpg" alt="Image Feed"></a></li>
-                </ul>
+                <h5><?php $footer = Footer3::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h5>
+                <?php if (isset($footer)) echo $footer->content; ?>
             </div>
         </div>
 
         <div class="row"><!-- Begin Sub Footer -->
             <div class="span12 footer-col footer-sub">
                 <div class="row no-margin">
-                    <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                    <div class="span6"><span class="left">© <?php echo date('Y', time()); ?> Lozay.</span></div>
                     <div class="span6">
                             <span class="right">
-                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
+<!--                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>-->
                             </span>
                     </div>
                 </div>
