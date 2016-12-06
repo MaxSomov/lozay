@@ -88,140 +88,140 @@
 <div class="color-bar-1"></div>
 <div class="color-bar-2 color-bg"></div>
 
-<div class="container">
 
-    <div class="row header" style="background: white;"><!-- Begin Header -->
 
-        <!-- Logo
-        ================================================== -->
-        <div class="span8">
-            <a href="http://lozay/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px" alt="" /></a>
-<!--            <h5>Big Things... Small Packages</h5>-->
+<div class="row header" style="background: white;"><!-- Begin Header -->
+
+    <!-- Logo
+    ================================================== -->
+    <div class="span8" >
+        <a style="margin-left: 10%;" href="http://lozay/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px" alt="" /></a>
+        <!--            <h5>Big Things... Small Packages</h5>-->
+    </div>
+
+    <!-- Main Navigation
+    ================================================== -->
+    <div class="span8 navigation" style="margin-top: 5px; margin-bottom: 0;">
+        <div class="navbar hidden-phone" style="margin-left: 10%;">
+
+            <ul class="nav">
+                <li>
+                    <a href="http://lozay/">Главная</a>
+                </li>
+
+                <?php
+                $menu1s = Menu1::model()->findAll();
+                foreach ($menu1s as $menu1) {
+                    $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
+                    if (count($menu2s) == 0) {
+                        ?>
+                        <li>
+                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></a>
+                        </li>
+                        <?php
+                    } else {
+                        ?>
+                        <li class="dropdown">
+                            <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>" class="dropdown-toggle"
+                               data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
+                            <ul class="dropdown-menu multi-level">
+                                <?php
+                                foreach ($menu2s as $menu2) {
+                                    $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
+                                    if (count($menu3s) == 0) {
+                                        ?>
+                                        <li>
+                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"><?php echo $menu2->name; ?></a>
+                                        </li>
+                                        <?php
+                                    } else {
+                                        ?>
+                                        <li class="dropdown-submenu">
+                                            <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
+                                               class="dropdown-toggle"
+                                               data-toggle="dropdown"><?php echo $menu2->name; ?></a>
+                                            <ul class="dropdown-menu" style="display: none;">
+                                                <?php
+                                                foreach ($menu3s as $menu3) {
+                                                    ?>
+                                                    <li>
+                                                        <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>"><?php echo $menu3->name; ?></a>
+                                                    </li>
+                                                    <?php
+                                                }
+                                                ?>
+                                            </ul>
+                                        </li>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </ul>
+                        </li>
+                        <?php
+                    }
+                }
+                ?>
+            </ul>
+
         </div>
 
-
-
-
-
-
-        <!-- Main Navigation
+        <!-- Mobile Nav
         ================================================== -->
-        <div class="span8 navigation" style="margin-top: 5px; margin-bottom: 0;">
-            <div class="navbar hidden-phone">
-
-                <ul class="nav">
-                    <li>
-                        <a href="http://lozay/">Главная</a>
-                    </li>
-
+        <form action="#" id="mobile-nav" class="visible-phone" style="margin-left: 10%;">
+            <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Меню...</option>
+                    <option value="http://lozay">Главная</option>
                     <?php
-                    $menu1s = Menu1::model()->findAll();
                     foreach ($menu1s as $menu1) {
                         $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
-                        if (count($menu2s) == 0) {
+                        ?>
+                        <option value="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></option>
+                        <?php
+                        foreach ($menu2s as $menu2) {
+                            $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
                             ?>
-                            <li>
-                                <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></a>
-                            </li>
+                            <option value="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>">- <?php echo $menu2->name; ?></option>
                             <?php
-                        } else {
+                            foreach ($menu3s as $menu3) {
+                                ?>
+                                <option value="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>">- - <?php echo $menu3->name; ?></option>
+                                <?php
+                            }
                             ?>
-                            <li class="dropdown">
-                                <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>" class="dropdown-toggle"
-                                   data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
-                                <ul class="dropdown-menu multi-level">
-                                    <?php
-                                    foreach ($menu2s as $menu2) {
-                                        $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
-                                        if (count($menu3s) == 0) {
-                                            ?>
-                                            <li>
-                                                <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"><?php echo $menu2->name; ?></a>
-                                            </li>
-                                            <?php
-                                        } else {
-                                            ?>
-                                            <li class="dropdown-submenu">
-                                                <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>"
-                                                   class="dropdown-toggle"
-                                                   data-toggle="dropdown"><?php echo $menu2->name; ?></a>
-                                                <ul class="dropdown-menu" style="display: none;">
-                                                    <?php
-                                                    foreach ($menu3s as $menu3) {
-                                                        ?>
-                                                        <li>
-                                                            <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>"><?php echo $menu3->name; ?></a>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                </ul>
-                                            </li>
-                                            <?php
-                                        }
-                                    }
-                                    ?>
-                                </ul>
-                            </li>
                             <?php
                         }
                     }
                     ?>
-                </ul>
-
+                </select>
             </div>
+        </form>
 
-            <!-- Mobile Nav
-            ================================================== -->
-            <form action="#" id="mobile-nav" class="visible-phone">
-                <div class="mobile-nav-select">
-                    <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
-                        <option value="">Меню...</option>
-                        <option value="http://lozay">Главная</option>
-                        <?php
-                        foreach ($menu1s as $menu1) {
-                        $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
-                        ?>
-                            <option value="<?php echo Yii::app()->createUrl('menu1/view', array('id'=>$menu1->id)); ?>"><?php echo $menu1->name; ?></option>
-                                    <?php
-                                    foreach ($menu2s as $menu2) {
-                                        $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
-                                            ?>
-                                                <option value="<?php echo Yii::app()->createUrl('menu2/view', array('id'=>$menu2->id)); ?>">- <?php echo $menu2->name; ?></option>
-                                                    <?php
-                                                    foreach ($menu3s as $menu3) {
-                                                        ?>
-                                                            <option value="<?php echo Yii::app()->createUrl('menu3/view', array('id'=>$menu3->id)); ?>">- - <?php echo $menu3->name; ?></option>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                            <?php
-                                        }
-                                    }
-                                    ?>
-                    </select>
-                </div>
-            </form>
+    </div>
 
-        </div>
+    <div class="span4">
+        <section style="margin-left: 10%;">
+            <div class="input-append">
+                <form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
+                    <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
+                </form>
+            </div>
+        </section>
+        <!--            <ul class="social-icons" style="font-size: 20pt; text-align: right;">-->
+        <!--                <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>-->
+        <!--                <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>-->
+        <!--                <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>-->
+        <!--                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>-->
+        <!--            </ul>-->
+    </div>
 
-        <div class="span4">
-            <section>
-                <div class="input-append">
-                    <form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
-                        <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
-                    </form>
-                </div>
-            </section>
-            <!--            <ul class="social-icons" style="font-size: 20pt; text-align: right;">-->
-            <!--                <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>-->
-            <!--                <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>-->
-            <!--                <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>-->
-            <!--                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>-->
-            <!--            </ul>-->
-        </div>
+</div><!-- End Header -->
 
-    </div><!-- End Header -->
+
+
+<div class="container">
+
 
     <!-- Blog Content
     ================================================== -->
