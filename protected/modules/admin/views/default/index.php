@@ -20,97 +20,73 @@ $menu1s = Menu1::model()->findAll();
     });
 </script>
 
-<!--@TODO: Вложенные вкладки должны наследовать номер родителя-->
+<style>
+    .line {
+        border-left: 2px solid #ccc; /* Параметры линии */
+        margin-left: 20px; /* Отступ слева */
+        padding-left: 10px;
+        /* Расстояние от линии до текста */
+    }
+    .m {
+        margin-bottom: 5px;
+        font-size: 18pt;
+    }
+</style>
 
-<div id="tabs">
-    <ul>
+<div class="col-md-12" style="margin-bottom: 100px;">
+<?php
+
+foreach ($menu1s as $menu1) {
+    ?>
+    <div class="m"><?= $menu1->name; ?> <a href="<?= Yii::app()->createUrl('admin/menu1/update', array('id' => $menu1->id)); ?>"><i
+                class="fa fa-pencil"></i></a> <a
+            href="<?= Yii::app()->createUrl('admin/menu1/del', array('id' => $menu1->id)); ?>"><i
+                class="fa fa-times"></i></a></div>
+    <?php
+    $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
+    foreach ($menu2s as $menu2) {
+        ?>
+        <div class="line m"><?= $menu2->name; ?> <a
+                href="<?= Yii::app()->createUrl('admin/menu2/update', array('id' => $menu2->id)); ?>"><i
+                    class="fa fa-pencil"></i></a> <a
+                href="<?= Yii::app()->createUrl('admin/menu2/del', array('id' => $menu2->id)); ?>"><i
+                    class="fa fa-times"></i></a></div>
         <?php
-
-        foreach ($menu1s as $menu1) {
+        $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
+        foreach ($menu3s as $menu3) {
             ?>
-            <li><a href="#tabs-<?= $menu1->id; ?>"><?= $menu1->name; ?></a></li>
+                <div class="line m">
+                    <div class="line m">
+                        <?= $menu3->name; ?> <a
+                            href="<?= Yii::app()->createUrl('admin/menu3/update', array('id' => $menu3->id)); ?>"><i
+                                class="fa fa-pencil"></i></a> <a
+                            href="<?= Yii::app()->createUrl('admin/menu3/del', array('id' => $menu3->id)); ?>"><i
+                                class="fa fa-times"></i></a>
+                    </div>
+                </div>
             <?php
         }
-
         ?>
-        <a href="<?= Yii::app()->createUrl('admin/menu1/create'); ?>" class="btn btn-default"><i class="fa fa-plus"></i> Добавить</a>
-    </ul>
-    <?php
-
-    foreach ($menu1s as $menu1) {
-        ?>
-        <div id="tabs-<?= $menu1->id; ?>">
-            <a href="<?= Yii::app()->createUrl('admin/menu1/update', array('id'=>$menu1->id)); ?>" class="btn btn-default"><i class="fa fa-pencil"></i> Редатировать </a>
-            <a href="<?= Yii::app()->createUrl('admin/menu1/del', array('id'=>$menu1->id)); ?>" class="btn btn-default"><i class="fa fa-times"></i> Удалить</a><hr>
-            <script>
-                $(function () {
-                    $("#tabs<?= $menu1->id; ?>").tabs();
-                });
-            </script>
-            <div id="tabs<?= $menu1->id; ?>">
-                <ul>
-                    <?php
-
-                    $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
-                    foreach ($menu2s as $menu2) {
-                        ?>
-                        <li><a href="#tabs<?= $menu1->id; ?>-<?= $menu2->id; ?>"><?= $menu2->name; ?></a></li>
-                        <?php
-                    }
-
-                    ?>
-                    <a href="<?= Yii::app()->createUrl('admin/menu2/create'); ?>" class="btn btn-default"><i class="fa fa-plus"></i> Добавить</a>
-                </ul>
-                <?php
-
-                foreach ($menu2s as $menu2) {
-                    ?>
-                    <div id="tabs<?= $menu1->id; ?>-<?= $menu2->id; ?>">
-                        <a href="<?= Yii::app()->createUrl('admin/menu2/update', array('id'=>$menu2->id)); ?>" class="btn btn-default"><i class="fa fa-pencil"></i> Редатировать </a>
-                        <a href="<?= Yii::app()->createUrl('admin/menu2/del', array('id'=>$menu2->id)); ?>" class="btn btn-default"><i class="fa fa-times"></i> Удалить</a><hr>
-                        <script>
-                            $(function () {
-                                $("#tabss<?= $menu2->id; ?>").tabs();
-                            });
-                        </script>
-                        <div id="tabss<?= $menu2->id; ?>">
-                            <ul>
-                                <?php
-
-                                $menu3s = Menu3::model()->findAllByAttributes(array("parent_id"=>$menu2->id));
-                                foreach ($menu3s as $menu3) {
-                                    ?>
-                                    <li><a href="#tabss<?= $menu2->id; ?>-<?= $menu3->id; ?>"><?= $menu3->name; ?></a></li>
-                                    <?php
-                                }
-
-                                ?>
-                                <a href="<?= Yii::app()->createUrl('admin/menu3/create'); ?>" class="btn btn-default"><i class="fa fa-plus"></i> Добавить</a>
-                            </ul>
-                            <?php
-
-                            foreach ($menu3s as $menu3){
-                                ?>
-                                <div id="tabss<?= $menu2->id; ?>-<?= $menu3->id; ?>">
-                                    <a href="<?= Yii::app()->createUrl('admin/menu3/update', array('id'=>$menu3->id)); ?>" class="btn btn-default"><i class="fa fa-pencil"></i> Редатировать </a>
-                                    <a href="<?= Yii::app()->createUrl('admin/menu3/del', array('id'=>$menu3->id)); ?>" class="btn btn-default"><i class="fa fa-times"></i> Удалить</a><hr>
-                                </div>
-                            <?php
-                            }
-
-                            ?>
-                        </div>
-                    </div>
-                    <?php
-                }
-
-                ?>
+        <div class="line m">
+            <div class="line m">
+               <a href="<?= Yii::app()->createUrl('admin/menu3/create'); ?>"><i class="fa fa-plus"></i> Добавить</a>
             </div>
         </div>
-        <?php
+<?php
     }
-
     ?>
+    <div class="line m">
+        <a href="<?= Yii::app()->createUrl('admin/menu2/create'); ?>"><i class="fa fa-plus"></i> Добавить</a>
+    </div>
+<?php
+}
+
+?>
+<div class="m">
+    <a href="<?= Yii::app()->createUrl('admin/menu1/create'); ?>"><i class="fa fa-plus"></i> Добавить</a>
+</div>
+
+
 </div>
 
 <!-- Footer -->
@@ -118,12 +94,22 @@ $menu1s = Menu1::model()->findAll();
 <hr>
 
 <div class="foot col-md-12">
-    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer1/update', array('id'=>1)); ?>" class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a> <h3><?php $footer = Footer1::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?></div>
-    <div class="col-md-3"><a href="" class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a><h3>Соцсети</h3></div>
-    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer2/update', array('id'=>1)); ?>" class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a><h3><?php $footer = Footer2::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?></div>
-    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer3/update', array('id'=>1)); ?>" class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a><h3><?php $footer = Footer3::model()->findByPk(1); if (isset($footer)) echo $footer->head; ?></h3>
-                <?php if (isset($footer)) echo $footer->content; ?></div>
+    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer1/update', array('id' => 1)); ?>"
+                             class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a>
+        <h3><?php $footer = Footer1::model()->findByPk(1);
+            if (isset($footer)) echo $footer->head; ?></h3>
+        <?php if (isset($footer)) echo $footer->content; ?></div>
+    <div class="col-md-3"><a href="" class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a>
+        <h3>Соцсети</h3></div>
+    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer2/update', array('id' => 1)); ?>"
+                             class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a>
+        <h3><?php $footer = Footer2::model()->findByPk(1);
+            if (isset($footer)) echo $footer->head; ?></h3>
+        <?php if (isset($footer)) echo $footer->content; ?></div>
+    <div class="col-md-3"><a href="<?= Yii::app()->createUrl('admin/footer3/update', array('id' => 1)); ?>"
+                             class="btn btn-default col-md-12"><i class="fa fa-pencil"></i> Редактировать</a>
+        <h3><?php $footer = Footer3::model()->findByPk(1);
+            if (isset($footer)) echo $footer->head; ?></h3>
+        <?php if (isset($footer)) echo $footer->content; ?></div>
 
 </div>

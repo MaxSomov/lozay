@@ -98,10 +98,14 @@
         <a style="margin-left: 10%;" href="http://lozay/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px" alt="" /></a>
         <!--            <h5>Big Things... Small Packages</h5>-->
     </div>
+    <div class="span12">
+
+    </div>
 
     <!-- Main Navigation
     ================================================== -->
-    <div class="span8 navigation" style="margin-top: 5px; margin-bottom: 0;">
+    <div class="span24" style="">
+    <div class="span10 navigation" style="margin-top: 5px; margin-bottom: 0; margin-left: 0;">
         <div class="navbar hidden-phone" style="margin-left: 10%;">
 
             <ul class="nav">
@@ -200,8 +204,8 @@
 
     </div>
 
-    <div class="span4">
-        <section style="margin-left: 10%;">
+    <div class="span3">
+        <section style="margin-left: 10px; align-content: right;">
             <div class="input-append">
                 <form action="<?= Yii::app()->createUrl('/site/page', array('view'=>'search')); ?>" method="post">
                     <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск..."><button class="btn" type="submit"><i class="icon-search"></i></button>
@@ -214,6 +218,8 @@
         <!--                <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>-->
         <!--                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>-->
         <!--            </ul>-->
+    </div>
+
     </div>
 
 </div><!-- End Header -->
