@@ -33,7 +33,11 @@ $menu1s = Menu1::model()->findAll();
     }
 </style>
 
-<div class="col-md-12" style="margin-bottom: 100px;">
+<div class="col-md-6" style="margin-bottom: 100px;">
+    <h2>
+        Основное меню
+        <br>
+    </h2>
 <?php
 
 foreach ($menu1s as $menu1) {
@@ -88,6 +92,7 @@ foreach ($menu1s as $menu1) {
 
 
 </div>
+
 
 <!-- Footer -->
 <!--<link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css"-->

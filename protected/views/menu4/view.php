@@ -1,30 +1,67 @@
 <?php
-/* @var $this Menu4Controller */
+/* @var $this Menu3Controller */
 /* @var $model Menu4 */
 
-$this->breadcrumbs=array(
-	'Menu4s'=>array('index'),
-	$model->name,
-);
-
-$this->menu=array(
-	array('label'=>'List Menu4', 'url'=>array('index')),
-	array('label'=>'Create Menu4', 'url'=>array('create')),
-	array('label'=>'Update Menu4', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Menu4', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Menu4', 'url'=>array('admin')),
-);
 ?>
 
-<h1>View Menu4 #<?php echo $model->id; ?></h1>
+<h1 class="title-bg"><?= $model->name; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'name',
-		'menu1',
-		'menu2',
-		'menu3',
-	),
-)); ?>
+<div class="span8">
+	<?php
+
+	if (count($posts)==0) echo "В данном разделе статей нет";
+	else {
+	//            $posts = Post::model()->findAll(array('order'=>'date DESC', 'limit'=>5));
+
+	foreach ($posts as $post) {
+		?>
+		<article>
+			<h3 class="title-bg" style="background: white; margin-bottom: 0;"><a href=""><?= $post->head; ?></a></h3>
+			<div class="post-content" style="background: white;">
+
+				<div class="post-body">
+					<?= $post->content; ?>
+				</div>
+
+				<div class="post-summary-footer">
+					<ul class="post-data">
+						<li><a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>" class="btn btn-mini btn-default hidden-phone" type="button">Читать далее</a></li>
+						<li><i class="icon-calendar"></i> <?= date('d/m/Y', $post->date); ?></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<hr>
+		<?php
+	}
+
+	?>
+	<div class="pagination">
+		<?php
+
+		$this->widget('CLinkPager', array(
+			'pages' => $pages,
+			'header' => "",
+			'firstPageLabel' => '<<',
+			'prevPageLabel' => '<',
+			'nextPageLabel' => '>',
+			'lastPageLabel' => '>>',
+			'maxButtonCount' => '10',
+			'selectedPageCssClass' => 'active',
+			'htmlOptions' => array(
+				'class' => ''
+			),g
+		));
+		}
+		?>
+	</div>
+
+	<div class="span4 sidebar">
+
+		<!--Categories-->
+		<h5 class="title-bg" style="margin-top: 0;">Реклама</h5>
+
+	</div>
+
+</div>
+

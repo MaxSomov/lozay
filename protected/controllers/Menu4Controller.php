@@ -51,9 +51,20 @@ class Menu4Controller extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+        $criteria = new CDbCriteria();
+        $criteria->condition = "menu4 = ".$id;
+        $count = Post::model()->count($criteria);
+        $pages = new CPagination($count);
+        $pages->pageSize = 10;
+        $pages->applyLimit($criteria);
+
+        $posts = Post::model()->findAll($criteria);
+
+        $this->render('view',array(
+            'posts'=>$posts,
+            'pages'=>$pages,
+            'model'=>$this->loadModel($id),
+        ));
 	}
 
 	/**

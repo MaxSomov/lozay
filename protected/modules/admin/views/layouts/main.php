@@ -41,6 +41,7 @@
         <li role="presentation"><a href="#">Сообщения</a></li>
         <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/searchstat'); ?>">Статистика</a></li>
         <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/post'); ?>">Статьи</a></li>
+        <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/menu4'); ?>">Второе меню</a> </li>
     </ul>
 </div>
 
