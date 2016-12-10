@@ -7,30 +7,22 @@
 
 <h1 class="title-bg"><?= $model->name; ?></h1>
 
-<?php
-$nav = Menu4::model()->findAllByAttributes(array("menu1"=>$model->id));
-if(count($nav)){
+<div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
+	<?php
+	$nav = Menu4::model()->findAllByAttributes(array("menu1" => $model->id));
+	if (count($nav)) {
+		?>
+		<?php
+		foreach ($nav as $item) {
+			?>
+			<a class="btn btn-default btn-large" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
+			<?php
+		}
+		?>
+		<?php
+	}
 	?>
-	<nav class="navbar navbar-default">
-		<div class="navbar-fluid">
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav">
-					<?php
-					foreach ($nav as $item){
-						?>
-						<li>
-							<a href="<?= Yii::app()->createUrl('menu4/view', array('id'=>$item->id)); ?>"><?php echo $item->name; ?></a>
-						</li>
-					<?php
-					}
-					?>
-				</ul>
-			</div>
-		</div>
-	</nav>
-<?php
-}
-?>
+</div>
 
 
 <div class="span8">
@@ -85,9 +77,6 @@ if(count($nav)){
 </div>
 
 <div class="span4 sidebar">
-
-	<!--Categories-->
-	<h5 class="title-bg" style="margin-top: 0;">Реклама</h5>
-
+	<h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
 </div>
 

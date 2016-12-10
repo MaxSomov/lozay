@@ -7,7 +7,7 @@
 
 <h1 class="title-bg"><?= $model->name; ?></h1>
 
-<div class="col-md-12" style="margin-bottom: 40px;">
+<div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
 <?php
 $nav = Menu4::model()->findAllByAttributes(array("menu2" => $model->id));
 if (count($nav)) {
@@ -15,7 +15,7 @@ if (count($nav)) {
     <?php
     foreach ($nav as $item) {
         ?>
-            <a class="btn btn-inverse btn-large" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
+            <a class="btn btn-default btn-large" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
         <?php
     }
     ?>
@@ -79,9 +79,6 @@ if (count($nav)) {
 </div>
 
 <div class="span4 sidebar">
-
-    <!--Categories-->
-    <h5 class="title-bg" style="margin-top: 0;">Реклама</h5>
-
+    <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
 </div>
 
