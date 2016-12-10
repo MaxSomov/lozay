@@ -93,6 +93,23 @@ foreach ($menu1s as $menu1) {
 
 </div>
 
+<div class="col-md-6">
+    <h2>
+        Реклама
+        <br>
+    </h2>
+    <?php
+
+    $adv = Adv::model()->findByPk(1);
+    echo $adv->content;
+
+    ?>
+    <p>
+    <a href="<?= Yii::app()->createUrl('admin/adv/update', array('id' => 1)); ?>"
+    class="btn btn-default"><i class="fa fa-pencil"></i> Редактировать</a>
+    </p>
+</div>
+
 
 <!-- Footer -->
 <!--<link rel="stylesheet" href="/mPurpose-master/css/bootstrap.min.css"-->

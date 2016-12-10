@@ -9594,3 +9594,329 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/sb/css/bootstrap.min.css.map
 ---
+2016/12/10 00:26:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:44:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:44:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:47:20 [error] [php] Trying to get property of non-object (/home/max/www/lozay/protected/views/site/index.php:42)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): SiteController->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /home/max/www/lozay/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/CController.php(286): SiteController->runAction()
+#6 /home/max/www/lozay/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /home/max/www/lozay/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in /home/max/www/lozay/protected/views/site/index.php (42)
+in /home/max/www/lozay/protected/controllers/SiteController.php (32)
+in /home/max/www/lozay/index.php (13)
+2016/12/10 09:47:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:47:51 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:48:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:49:12 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:49:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:49:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:50:09 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:52:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/admin/adv
+---
+2016/12/10 09:52:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/admin/adv
+---
+2016/12/10 09:53:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/site/login
+---
+2016/12/10 09:53:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/site/login
+---
+2016/12/10 09:53:13 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/site/login
+---
+2016/12/10 09:53:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:53:56 [error] [php] Object of class Adv could not be converted to string (/home/max/www/lozay/protected/modules/admin/views/default/index.php:104)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php(43): DefaultController->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#6 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#12 /home/max/www/lozay/framework/web/CWebApplication.php(282): DefaultController->run()
+#13 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in /home/max/www/lozay/protected/modules/admin/views/default/index.php (104)
+in /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php (43)
+in /home/max/www/lozay/index.php (13)
+2016/12/10 09:54:08 [error] [php] Object of class Adv could not be converted to string (/home/max/www/lozay/protected/modules/admin/views/default/index.php:104)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php(43): DefaultController->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#6 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#12 /home/max/www/lozay/framework/web/CWebApplication.php(282): DefaultController->run()
+#13 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in /home/max/www/lozay/protected/modules/admin/views/default/index.php (104)
+in /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php (43)
+in /home/max/www/lozay/index.php (13)
+2016/12/10 09:54:09 [error] [php] Object of class Adv could not be converted to string (/home/max/www/lozay/protected/modules/admin/views/default/index.php:104)
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CController.php(869): DefaultController->renderFile()
+#1 /home/max/www/lozay/framework/web/CController.php(782): DefaultController->renderPartial()
+#2 /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php(43): DefaultController->render()
+#3 /home/max/www/lozay/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#4 /home/max/www/lozay/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /home/max/www/lozay/framework/web/filters/CFilterChain.php(133): DefaultController->runAction()
+#6 /home/max/www/lozay/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /home/max/www/lozay/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /home/max/www/lozay/framework/web/filters/CInlineFilter.php(58): DefaultController->filterAccessControl()
+#9 /home/max/www/lozay/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /home/max/www/lozay/framework/web/CController.php(291): CFilterChain->run()
+#11 /home/max/www/lozay/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#12 /home/max/www/lozay/framework/web/CWebApplication.php(282): DefaultController->run()
+#13 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/max/www/lozay/index.php(13): CWebApplication->run()
+REQUEST_URI=/admin
+in /home/max/www/lozay/protected/modules/admin/views/default/index.php (104)
+in /home/max/www/lozay/protected/modules/admin/controllers/DefaultController.php (43)
+in /home/max/www/lozay/index.php (13)
+2016/12/10 09:54:11 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:54:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:55:05 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:55:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:55:40 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:56:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:56:14 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2016/12/10 09:56:56 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:57:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:57:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2016/12/10 09:57:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---

@@ -50,7 +50,7 @@
 			'selectedPageCssClass' => 'active',
 			'htmlOptions' => array(
 				'class' => ''
-			),g
+			),
 		));
 		}
 		?>
