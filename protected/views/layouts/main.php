@@ -159,10 +159,10 @@
                                                 } else {
                                                     ?>
                                                     <li class="dropdown-submenu">
-                                                        <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
+                                                        <a onmouseout="out(<?= $menu2->id; ?>)" onmouseover="over(<?= $menu2->id; ?>)" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
                                                            class="dropdown-toggle"
                                                            data-toggle="dropdown"><?php echo $menu2->name; ?></a>
-                                                        <ul class="dropdown-menu" style="display: none;">
+                                                        <ul class="dropdown-menu" id="parent<?= $menu2->id; ?>" style="display: none;">
                                                             <?php
                                                             foreach ($menu3s as $menu3) {
                                                                 ?>
@@ -302,3 +302,15 @@
 
 </body>
 </html>
+
+<script>
+    function over(id) {
+        document.getElementById('parent' + id).removeAttribute('style');
+        document.getElementById('parent' + id).setAttribute('style', 'display: block');
+    }
+
+    function out(id) {
+        document.getElementById('parent' + id).removeAttribute('style');
+        document.getElementById('parent' + id).setAttribute('style', 'display: none');
+    }
+</script>
