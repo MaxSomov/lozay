@@ -12,7 +12,8 @@ $this->menu=array(
 	array('label'=>'Manage Menu1', 'url'=>array('admin')),
 );
 ?>
-
+<div class="col-md-12">
 <h1>Create Menu1</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

@@ -108,6 +108,17 @@ foreach ($menu1s as $menu1) {
     <a href="<?= Yii::app()->createUrl('admin/adv/update', array('id' => 1)); ?>"
     class="btn btn-default"><i class="fa fa-pencil"></i> Редактировать</a>
     </p>
+    <hr>
+    <?php
+
+    $adv = Adv::model()->findByPk(2);
+    echo $adv->content;
+
+    ?>
+    <p>
+        <a href="<?= Yii::app()->createUrl('admin/adv/update', array('id' => 2)); ?>"
+           class="btn btn-default"><i class="fa fa-pencil"></i> Редактировать</a>
+    </p>
 </div>
 
 

@@ -3,6 +3,7 @@
 /* @var $model Adv */
 /* @var $form CActiveForm */
 ?>
+<script src="/ckeditor/ckeditor.js"></script>
 
 <div class="form">
 
@@ -32,3 +33,10 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script>
+    // Replace the <textarea id="editor1"> with a CKEditor
+    // instance, using default configuration.
+    CKEDITOR.replace( 'Adv[content]' );
+    CKEDITOR.config.height = '400px';
+</script>

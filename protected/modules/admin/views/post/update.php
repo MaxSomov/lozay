@@ -15,7 +15,8 @@ $this->menu=array(
 	array('label'=>'Manage Post', 'url'=>array('admin')),
 );
 ?>
-
+<div class="col-md-12">
 <h1>Update Post <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

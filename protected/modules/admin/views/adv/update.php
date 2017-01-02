@@ -16,6 +16,9 @@ $this->menu=array(
 );
 ?>
 
+<div class="col-md-12">
+
 <h1>Update Adv <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>

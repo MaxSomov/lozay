@@ -15,7 +15,8 @@ $this->menu=array(
 	array('label'=>'Manage Menu2', 'url'=>array('admin')),
 );
 ?>
-
+<div class="col-md-12">
 <h1>Update Menu2 <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+</div>
