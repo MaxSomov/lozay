@@ -11542,3 +11542,99 @@ Stack trace:
 REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
 HTTP_REFERER=http://lozay/
 ---
+2017/01/03 14:03:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 14:21:20 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 14:21:34 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/site/login
+---
+2017/01/03 14:21:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "resources/demos/style.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://lozay/admin
+---
+2017/01/03 14:21:48 [error] [exception.ParseError] ParseError: syntax error, unexpected '.', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/max/www/lozay/protected/modules/admin/controllers/PostController.php:100
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#1 /home/max/www/lozay/framework/web/CWebApplication.php(276): CWebApplication->createController('post/')
+#2 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/post')
+#3 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/max/www/lozay/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/post
+HTTP_REFERER=http://lozay/admin
+---
+2017/01/03 14:22:24 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/max/www/lozay/protected/modules/admin/controllers/PostController.php:124
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#1 /home/max/www/lozay/framework/web/CWebApplication.php(276): CWebApplication->createController('post/')
+#2 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/post')
+#3 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/max/www/lozay/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/post
+HTTP_REFERER=http://lozay/admin
+---
+2017/01/03 14:22:27 [error] [exception.ParseError] ParseError: syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION) in /home/max/www/lozay/protected/modules/admin/controllers/PostController.php:124
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(338): CWebApplication->createController('', Object(AdminModule))
+#1 /home/max/www/lozay/framework/web/CWebApplication.php(276): CWebApplication->createController('post/')
+#2 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('admin/post')
+#3 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/max/www/lozay/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/post
+HTTP_REFERER=http://lozay/admin
+---
+2017/01/03 14:23:03 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 14:23:06 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/post/1
+---
+2017/01/03 14:27:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/post/1
+---

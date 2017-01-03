@@ -78,8 +78,50 @@ class PostController extends Controller
             $model->menu2 = $str_array[1];
             $model->menu3 = $str_array[2];
             $model->menu4 = $_POST['menu4'];
-			if($model->save())
-				$this->redirect(array('index'));
+			if($model->save()){
+
+                $pieces= explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $model->content);
+			    $recipients = Subscribe::model()->findAllByAttributes(array('status'=>1));
+
+                foreach ($recipients as $recipient) {
+                    $to = $recipient->email; // обратите внимание на запятую
+
+// тема письма
+                    $subject = $model->head;
+
+// текст письма
+                    $message = "
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <h1>'.$model->head.'</h1>
+  <hr>
+  '.$pieces[0].'
+  <hr>
+  <a href='http://lozay.ru/post/".$model->id."'>Читать далее</a>
+</body>
+</html>
+";
+
+// Для отправки HTML-письма должен быть установлен заголовок Content-type
+                    $headers  = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+// Дополнительные заголовки
+                    $headers[] = 'To: '.$recipient->email;
+                    $headers[] = 'From: Lozay <noreply@lozay.ru>';
+                    $headers[] = 'Cc: noreply@lozay.ru';
+                    $headers[] = 'Bcc: noreply@lozay.ru';
+
+// Отправляем
+                    mail($to, $subject, $message, implode("\r\n", $headers));
+
+                }
+
+                $this->redirect(array('index'));
+            }
 		}
 
 		$this->render('create',array(
