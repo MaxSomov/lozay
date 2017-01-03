@@ -158,8 +158,8 @@
                                                     <?php
                                                 } else {
                                                     ?>
-                                                    <li class="dropdown-submenu">
-                                                        <a onmouseout="out(<?= $menu2->id; ?>)" onmouseover="over(<?= $menu2->id; ?>)" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
+                                                    <li class="dropdown-submenu" onmouseout="out(<?= $menu2->id; ?>)" onmouseover="over(<?= $menu2->id; ?>)">
+                                                        <a  href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
                                                            class="dropdown-toggle"
                                                            data-toggle="dropdown"><?php echo $menu2->name; ?></a>
                                                         <ul class="dropdown-menu" id="parent<?= $menu2->id; ?>" style="display: none;">

@@ -10790,3 +10790,66 @@ Stack trace:
 REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
 HTTP_REFERER=http://lozay/
 ---
+2017/01/03 09:52:00 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 09:52:01 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "favicon.ico". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 09:55:31 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 09:56:37 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
+2017/01/03 09:56:48 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/menu3/7
+---
+2017/01/03 09:56:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/menu3/10
+---
+2017/01/03 09:56:54 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
