@@ -1,30 +1,30 @@
 <?php
 /* @var $this MailingController */
 /* @var $model Mailing */
-
-$this->breadcrumbs=array(
-	'Mailings'=>array('index'),
-	$model->id,
-);
-
-$this->menu=array(
-	array('label'=>'List Mailing', 'url'=>array('index')),
-	array('label'=>'Create Mailing', 'url'=>array('create')),
-	array('label'=>'Update Mailing', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Mailing', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Mailing', 'url'=>array('admin')),
-);
 ?>
 
-<h1>View Mailing #<?php echo $model->id; ?></h1>
+<?php
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'email',
-		'code',
-		'verification',
-		'time',
-	),
-)); ?>
+if ($model->code != $model->verification) {
+
+    ?>
+
+    <h1>Подтверждение подписки</h1>
+
+    <form action="<?= Yii::app()->createUrl('mailing/submit', array('id' => $model->id)); ?>" method="post">
+        <input placeholder="Код из письма" type="text" name="verification"><br>
+        <button class="btn" type="submit">Продолжить</button>
+    </form>
+
+    <?php
+}
+
+else {
+    ?>
+
+    <h1>Подписка оформлена</h1>
+    <p><?= $model->email; ?></p>
+    <a class="btn">Отписаться</a>
+    <?php
+}
+    ?>

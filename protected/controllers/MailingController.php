@@ -28,7 +28,7 @@ class MailingController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'submit'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -55,6 +55,15 @@ class MailingController extends Controller
 			'model'=>$this->loadModel($id),
 		));
 	}
+
+	public function actionSubmit($id){
+	    $model = Mailing::model()->findByPk($id);
+	    if($model->code == $_POST['verification']){
+	        $model->verification = $_POST['verification'];
+	        $model->save();
+        }
+        $this->redirect(array('view','id'=>$model->id));
+    }
 
 	/**
 	 * Creates a new model.
@@ -84,7 +93,7 @@ class MailingController extends Controller
                 $to      = $model->email;
                 $subject = 'Подтверждение подписки';
                 $message = 'Код подтверждения: '.$model->code;
-                $headers = 'From: noreply@lozay.ru' . "\r\n" .
+                $headers = 'From: Lozay' . "\r\n" .
                     'Reply-To: From: noreply@lozay.ru' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();
 
