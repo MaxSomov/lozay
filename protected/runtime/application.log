@@ -11110,3 +11110,57 @@ Stack trace:
 REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
 HTTP_REFERER=http://lozay/site/page?view=mail
 ---
+2017/01/03 12:25:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/mailing
+---
+2017/01/03 12:28:26 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/mailing/create
+---
+2017/01/03 12:31:30 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/mailing/create
+---
+2017/01/03 12:31:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/mailing/1
+---
+2017/01/03 12:31:46 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/mailing/1
+---
+2017/01/03 12:31:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "WG Piccolo Theme/css/jquery.lightbox-0.5.css". in /home/max/www/lozay/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/max/www/lozay/framework/web/CWebApplication.php(141): CWebApplication->runController('WG Piccolo Them...')
+#1 /home/max/www/lozay/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/max/www/lozay/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css
+HTTP_REFERER=http://lozay/
+---
