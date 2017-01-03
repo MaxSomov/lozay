@@ -1,23 +1,24 @@
 <?php
 
 /**
- * This is the model class for table "mailing".
+ * This is the model class for table "subscribe".
  *
- * The followings are the available columns in table 'mailing':
+ * The followings are the available columns in table 'subscribe':
  * @property integer $id
  * @property string $email
  * @property string $code
  * @property string $verification
  * @property integer $time
+ * @property integer $status
  */
-class Mailing extends CActiveRecord
+class Subscribe extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'mailing';
+		return 'subscribe';
 	}
 
 	/**
@@ -29,11 +30,11 @@ class Mailing extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('email', 'required'),
-			array('time', 'numerical', 'integerOnly'=>true),
+			array('time, status', 'numerical', 'integerOnly'=>true),
 			array('code, verification', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email, code, verification, time', 'safe', 'on'=>'search'),
+			array('id, email, code, verification, time, status', 'safe', 'on'=>'search'),
             array('email','unique', 'message'=>'This issue already exists.'),
 		);
 	}
@@ -60,6 +61,7 @@ class Mailing extends CActiveRecord
 			'code' => 'Code',
 			'verification' => 'Verification',
 			'time' => 'Time',
+			'status' => 'Status',
 		);
 	}
 
@@ -86,6 +88,7 @@ class Mailing extends CActiveRecord
 		$criteria->compare('code',$this->code,true);
 		$criteria->compare('verification',$this->verification,true);
 		$criteria->compare('time',$this->time);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -96,7 +99,7 @@ class Mailing extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Mailing the static model class
+	 * @return Subscribe the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

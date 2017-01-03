@@ -1,18 +1,18 @@
 <?php
-/* @var $this MailingController */
+/* @var $this SubscribeController */
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Mailings',
+	'Subscribes',
 );
 
 $this->menu=array(
-	array('label'=>'Create Mailing', 'url'=>array('create')),
-	array('label'=>'Manage Mailing', 'url'=>array('admin')),
+	array('label'=>'Create Subscribe', 'url'=>array('create')),
+	array('label'=>'Manage Subscribe', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Mailings</h1>
+<h1>Subscribes</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -1,6 +1,6 @@
 <?php
-/* @var $this MailingController */
-/* @var $data Mailing */
+/* @var $this SubscribeController */
+/* @var $data Subscribe */
 ?>
 
 <div class="view">
@@ -23,6 +23,10 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('time')); ?>:</b>
 	<?php echo CHtml::encode($data->time); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
+	<?php echo CHtml::encode($data->status); ?>
 	<br />
 
 

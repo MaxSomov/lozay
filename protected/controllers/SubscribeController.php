@@ -1,6 +1,6 @@
 <?php
 
-class MailingController extends Controller
+class SubscribeController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,7 +28,7 @@ class MailingController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'submit'),
+				'actions'=>array('index','view', 'submit', 'unsubscribe'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -57,12 +57,38 @@ class MailingController extends Controller
 	}
 
 	public function actionSubmit($id){
-	    $model = Mailing::model()->findByPk($id);
-	    if($model->code == $_POST['verification']){
-	        $model->verification = $_POST['verification'];
-	        $model->save();
+        $model = Subscribe::model()->findByPk($id);
+        if($model->status==0 && $model->code==$_POST['verification']){
+            $model->verification = $_POST['verification'];
+            $model->status = 1;
+            $model->save();
+        }
+
+        if($model->status==2 && $model->code==$_POST['verification']){
+            $model->delete();
+            $this->redirect('http://lozay.ru');
         }
         $this->redirect(array('view','id'=>$model->id));
+    }
+
+
+    public function actionUnsubscribe($id){
+	    $model = Subscribe::model()->findByPk($id);
+	    if($model->status == 1){
+            $to      = $model->email;
+            $subject = 'Подтверждение отписки';
+            $message = 'Код подтверждения: '.$model->code;
+            $headers = 'From: noreply@lozay.ru' . "\r\n" .
+                'Reply-To: noreply@lozay.ru' . "\r\n" .
+                'X-Mailer: PHP/' . phpversion();
+
+            mail($to, $subject, $message, $headers);
+
+            $model->status = 2;
+            $model->save();
+
+            $this->redirect(array('view','id'=>$model->id));
+        }
     }
 
 	/**
@@ -71,14 +97,14 @@ class MailingController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Mailing;
+		$model=new Subscribe;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Mailing']))
+		if(isset($_POST['Subscribe']))
 		{
-			$model->attributes=$_POST['Mailing'];
+			$model->attributes=$_POST['Subscribe'];
 
             $chars = 'abdefhiknrstyzABDEFGHKNQRSTYZ23456789';
             $numChars = strlen($chars);
@@ -87,14 +113,17 @@ class MailingController extends Controller
                 $string .= substr($chars, rand(1, $numChars) - 1, 1);
             }
             $model->code = $string;
+
             $model->time = time();
+
+            $model->status = 0;
 
 			if($model->save()){
                 $to      = $model->email;
                 $subject = 'Подтверждение подписки';
                 $message = 'Код подтверждения: '.$model->code;
-                $headers = 'From: Lozay' . "\r\n" .
-                    'Reply-To: From: noreply@lozay.ru' . "\r\n" .
+                $headers = 'From: noreply@lozay.ru' . "\r\n" .
+                    'Reply-To: noreply@lozay.ru' . "\r\n" .
                     'X-Mailer: PHP/' . phpversion();
 
                 mail($to, $subject, $message, $headers);
@@ -120,9 +149,9 @@ class MailingController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Mailing']))
+		if(isset($_POST['Subscribe']))
 		{
-			$model->attributes=$_POST['Mailing'];
+			$model->attributes=$_POST['Subscribe'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -151,7 +180,7 @@ class MailingController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Mailing');
+		$dataProvider=new CActiveDataProvider('Subscribe');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -162,10 +191,10 @@ class MailingController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Mailing('search');
+		$model=new Subscribe('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Mailing']))
-			$model->attributes=$_GET['Mailing'];
+		if(isset($_GET['Subscribe']))
+			$model->attributes=$_GET['Subscribe'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -176,12 +205,12 @@ class MailingController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Mailing the loaded model
+	 * @return Subscribe the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Mailing::model()->findByPk($id);
+		$model=Subscribe::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -189,11 +218,11 @@ class MailingController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Mailing $model the model to be validated
+	 * @param Subscribe $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='mailing-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='subscribe-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
