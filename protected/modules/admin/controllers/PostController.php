@@ -81,7 +81,8 @@ class PostController extends Controller
 			if($model->save()){
 
                 $pieces= explode("<div style=\"page-break-after: always\"><span style=\"display:none\">&nbsp;</span></div>", $model->content);
-			    $recipients = Subscribe::model()->findAllByAttributes(array('status'=>1));
+                $p = $pieces[0];
+                $recipients = Subscribe::model()->findAllByAttributes(array('status'=>1));
 
                 foreach ($recipients as $recipient) {
                     $to = $recipient->email; // обратите внимание на запятую
@@ -96,9 +97,9 @@ class PostController extends Controller
   <title></title>
 </head>
 <body>
-  <h1>'.$model->head.'</h1>
+  <h1>".$model->head."</h1>
   <hr>
-  '.$pieces[0].'
+  ".$p."
   <hr>
   <a href='http://lozay.ru/post/".$model->id."'>Читать далее</a>
 </body>
@@ -106,17 +107,14 @@ class PostController extends Controller
 ";
 
 // Для отправки HTML-письма должен быть установлен заголовок Content-type
-                    $headers  = 'MIME-Version: 1.0' . "\r\n";
+                    $headers = 'From: Lozay <noreply@lozay.ru>' . "\r\n" .
+                        'Reply-To: noreply@lozay.ru' . "\r\n" .
+                        'X-Mailer: PHP/' . phpversion()."\r\n";
+                    $headers  .= 'MIME-Version: 1.0' . "\r\n";
                     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-// Дополнительные заголовки
-                    $headers[] = 'To: '.$recipient->email;
-                    $headers[] = 'From: Lozay <noreply@lozay.ru>';
-                    $headers[] = 'Cc: noreply@lozay.ru';
-                    $headers[] = 'Bcc: noreply@lozay.ru';
-
 // Отправляем
-                    mail($to, $subject, $message, implode("\r\n", $headers));
+                    mail($to, $subject, $message, $headers);
 
                 }
 

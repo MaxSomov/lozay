@@ -4,7 +4,7 @@
 
 ?>
 
-<h1 class="title-bg"><?= $model->name; ?></h1>
+<h1 class="title-bg" style="margin-bottom: 5px;"><?= $model->name; ?></h1>
 
 <div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
 	<?php
@@ -22,6 +22,7 @@
 	}
 	?>
 </div>
+
 
 <div class="span8">
 	<?php
@@ -73,11 +74,12 @@
 		?>
 	</div>
 
-	<div class="span4 sidebar">
-		<h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
-        <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
 
-    </div>
 
 </div>
 
+<div class="span4 sidebar">
+    <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
+    <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
+
+</div>
