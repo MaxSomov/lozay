@@ -2,7 +2,17 @@
 /* @var $this Menu3Controller */
 /* @var $model Menu3 */
 
+$m2 = Menu2::model()->findByPk($model->parent_id);
+$m1 = Menu1::model()->findByPk($m2->parent_id);
+
 ?>
+
+<ol class="breadcrumb">
+    <li><a href="http://lozay">Главная</a> </li>
+    <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id'=>$m1->id)); ?>"><?= $m1->name; ?></a> </li>
+    <li><a href="<?= Yii::app()->createUrl('menu2/view', array('id'=>$m2->id)); ?>"><?= $m2->name; ?></a> </li>
+    <li class="active"><?= $model->name; ?></li>
+</ol>
 
 <h1 class="title-bg" style="margin-bottom: 5px;"><?= $model->name; ?></h1>
 
@@ -14,7 +24,7 @@
 		<?php
 		foreach ($nav as $item) {
 			?>
-			<a class="btn btn-default btn-large" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
+			<a class="btn btn-primary" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
 			<?php
 		}
 		?>

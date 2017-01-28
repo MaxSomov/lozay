@@ -121,13 +121,13 @@
 
             <!-- Main Navigation
             ================================================== -->
-            <div class="span24" style="">
-                <div class="span8 navigation" style="margin-top: 5px; margin-bottom: 0; margin-left: 0;">
+            <div class="span12" style="">
+                <div class="span12 navigation" style="margin-top: 5px; margin-bottom: 0; margin-left: 0;">
                     <div class="navbar hidden-phone" style="">
 
                         <ul class="nav" style="margin-right: 0;">
                             <li>
-                                <a href="http://lozay/">Главная</a>
+                                <a href="http://lozay/" style="font-weight: bold;">Главная</a>
                             </li>
 
                             <?php
@@ -137,13 +137,13 @@
                                 if (count($menu2s) == 0) {
                                     ?>
                                     <li>
-                                        <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></a>
+                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></a>
                                     </li>
                                     <?php
                                 } else {
                                     ?>
                                     <li class="dropdown">
-                                        <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"
+                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"
                                            class="dropdown-toggle"
                                            data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
                                         <ul class="dropdown-menu multi-level">
@@ -153,13 +153,13 @@
                                                 if (count($menu3s) == 0) {
                                                     ?>
                                                     <li>
-                                                        <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"><?php echo $menu2->name; ?></a>
+                                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"><?php echo $menu2->name; ?></a>
                                                     </li>
                                                     <?php
                                                 } else {
                                                     ?>
                                                     <li class="dropdown-submenu" onmouseout="out(<?= $menu2->id; ?>)" onmouseover="over(<?= $menu2->id; ?>)">
-                                                        <a  href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
+                                                        <a  style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
                                                            class="dropdown-toggle"
                                                            data-toggle="dropdown"><?php echo $menu2->name; ?></a>
                                                         <ul class="dropdown-menu" id="parent<?= $menu2->id; ?>" style="display: none;">
@@ -167,7 +167,7 @@
                                                             foreach ($menu3s as $menu3) {
                                                                 ?>
                                                                 <li>
-                                                                    <a href="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>"><?php echo $menu3->name; ?></a>
+                                                                    <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>"><?php echo $menu3->name; ?></a>
                                                                 </li>
                                                                 <?php
                                                             }

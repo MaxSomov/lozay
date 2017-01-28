@@ -5,6 +5,11 @@
 
 ?>
 
+<ol class="breadcrumb">
+    <li> <a href="http://lozay.ru">Главная</a></li>
+    <li class="active"><?= $model->name; ?></li>
+</ol>
+
 <h1 class="title-bg"><?= $model->name; ?></h1>
 
 <div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">

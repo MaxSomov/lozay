@@ -5,6 +5,12 @@
 
 ?>
 
+<ol class="breadcrumb">
+    <li><a href="http://lozay">Главная</a> </li>
+    <li><a href="<?php $parent = Menu1::model()->findByPk($model->parent_id); echo Yii::app()->createUrl('menu1/view', array('id'=>$parent->id)); ?>"><?= $parent->name; ?></a> </li>
+    <li class="active"><?= $model->name; ?></li>
+</ol>
+
 <h1 class="title-bg"><?= $model->name; ?></h1>
 
 <div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">

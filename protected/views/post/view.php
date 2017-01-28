@@ -6,6 +6,31 @@
 Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
 ?>
 
+<ol class="breadcrumb">
+    <li><a href="http://lozay.ru">Главная</a> </li>
+    <?php if($model->menu1!=0){
+        ?>
+        <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id'=>$model->menu1)); ?>"><?php $name = Menu1::model()->findByPk($model->menu1); echo $name->name; ?></a> </li>
+    <?php
+    } ?>
+    <?php if($model->menu2!=0){
+        ?>
+        <li><a href="<?= Yii::app()->createUrl('menu2/view', array('id'=>$model->menu2)); ?>"><?php $name = Menu2::model()->findByPk($model->menu2); echo $name->name; ?></a> </li>
+        <?php
+    } ?>
+    <?php if($model->menu3!=0){
+        ?>
+        <li><a href="<?= Yii::app()->createUrl('menu3/view', array('id'=>$model->menu3)); ?>"><?php $name = Menu3::model()->findByPk($model->menu3); echo $name->name; ?></a> </li>
+        <?php
+    } ?>
+    <?php if($model->menu4!=0){
+        ?>
+        <li><a href="<?= Yii::app()->createUrl('menu4/view', array('id'=>$model->menu4)); ?>"><?php $name = Menu4::model()->findByPk($model->menu4); echo $name->name; ?></a> </li>
+        <?php
+    } ?>
+    <li class="active"><?= $model->head; ?></li>
+</ol>
+
 <div class="span8 blog">
 
     <!-- Blog Post 1 -->
