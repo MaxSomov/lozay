@@ -2,9 +2,53 @@
 /* @var $this Menu3Controller */
 /* @var $model Menu4 */
 
+if($model->menu3 == 0){
+    if($model->menu2 == 0){
+        $m1 = Menu1::model()->findByPk($model->menu1);
+        $m2 = 0;
+        $m3 = 0;
+    }
+    else {
+        $m2 = Menu2::model()->findByPk($model->menu2);
+        $m1 = Menu1::model()->findByPk($m2->parent_id);
+        $m3 = 0;
+    }
+}
+else{
+    $m3 = Menu3::model()->findByPk($model->menu3);
+    $m2 = Menu2::model()->findByPk($m3->parent_id);
+    $m1 = Menu1::model()->findByPk($m2->parent_id);
+}
+
 ?>
 
+<ol class="breadcrumb">
+    <li><a href="http://lozay">Главная</a> </li>
+    <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id'=>$m1->id)); ?>"><?= $m1->name; ?></a> </li>
+    <li><a href="<?= Yii::app()->createUrl('menu2/view', array('id'=>$m2->id)); ?>"><?= $m2->name; ?></a> </li>
+    <li><a href="<?= Yii::app()->createUrl('menu3/view', array('id'=>$m3->id)); ?>"><?= $m3->name; ?></a> </li>
+    <li class="active"><?= $model->name; ?></li>
+</ol>
+
 <h1 class="title-bg"><?= $model->name; ?></h1>
+
+
+<div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
+    <?php
+    $nav = Menu4::model()->findAllByAttributes(array("menu3" => $m3->id));
+    if (count($nav)) {
+        ?>
+        <?php
+        foreach ($nav as $item) {
+            ?>
+            <a class="btn btn-primary" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
+            <?php
+        }
+        ?>
+        <?php
+    }
+    ?>
+</div>
 
 <div class="span8">
 	<?php
