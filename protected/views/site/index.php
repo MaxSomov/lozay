@@ -5,7 +5,7 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <!--<div class="container">-->
-
+<div style="padding-top:20px;">
 	<div class="span8">
 		<?php
 
@@ -43,8 +43,6 @@ $this->pageTitle=Yii::app()->name;
         <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
     </div>
 
-
-
-
+</div>
 
 

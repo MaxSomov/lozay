@@ -5,6 +5,8 @@
 
 ?>
 
+<div class="container" style="padding-left: 30px;">
+
 <ol class="breadcrumb">
     <li> <a href="http://lozay.ru">Главная</a></li>
     <li class="active"><?= $model->name; ?></li>
@@ -29,6 +31,7 @@
 	?>
 </div>
 
+</div>
 
 <div class="span8">
 	<?php
@@ -86,4 +89,3 @@
     <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
 
 </div>
-

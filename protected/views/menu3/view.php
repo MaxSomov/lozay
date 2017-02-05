@@ -7,6 +7,8 @@ $m1 = Menu1::model()->findByPk($m2->parent_id);
 
 ?>
 
+<div class="container" style="padding-left: 30px;">
+
 <ol class="breadcrumb">
     <li><a href="http://lozay">Главная</a> </li>
     <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id'=>$m1->id)); ?>"><?= $m1->name; ?></a> </li>
@@ -33,7 +35,7 @@ $m1 = Menu1::model()->findByPk($m2->parent_id);
 	?>
 </div>
 
-
+</div>
 <div class="span8">
 	<?php
 

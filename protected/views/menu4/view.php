@@ -22,6 +22,8 @@ else{
 
 ?>
 
+<div class="container" style="padding-left: 30px;">
+
 <ol class="breadcrumb">
     <li><a href="http://lozay">Главная</a> </li>
     <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id'=>$m1->id)); ?>"><?= $m1->name; ?></a> </li>
@@ -30,7 +32,7 @@ else{
     <li class="active"><?= $model->name; ?></li>
 </ol>
 
-<h1 class="title-bg"><?= $model->name; ?></h1>
+<h1 class="title-bg" style="margin-bottom: 5px;"><?= $model->name; ?></h1>
 
 
 <div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
@@ -49,6 +51,9 @@ else{
     }
     ?>
 </div>
+
+</div>
+
 
 <div class="span8">
 	<?php

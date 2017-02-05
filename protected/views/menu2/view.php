@@ -5,6 +5,8 @@
 
 ?>
 
+<div class="container" style="padding-left: 30px;">
+
 <ol class="breadcrumb">
     <li><a href="http://lozay">Главная</a> </li>
     <li><a href="<?php $parent = Menu1::model()->findByPk($model->parent_id); echo Yii::app()->createUrl('menu1/view', array('id'=>$parent->id)); ?>"><?= $parent->name; ?></a> </li>
@@ -30,6 +32,7 @@ if (count($nav)) {
 ?>
 </div>
 
+</div>
 
 <div class="span8">
     <?php
@@ -89,4 +92,3 @@ if (count($nav)) {
     <h5 class="title-bg" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
 
 </div>
-
