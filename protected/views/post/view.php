@@ -2,7 +2,6 @@
 /* @var $this PostController */
 /* @var $model Post */
 
-//$this->pageKeywords = $model->meta;
 Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
 ?>
 
@@ -35,8 +34,8 @@ Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
 
     <!-- Blog Post 1 -->
     <article>
-        <h3 class="title-bg"><a href="" style="color: #3376BC;"><?= $model->head; ?></a></h3>
-        <div class="post-content">
+        <h3 class="title-bg back"><a href="" style="color: #3376BC;"><?= $model->head; ?></a></h3>
+        <div class="post-content back">
 
             <div class="post-body">
                 <?= $model->content; ?>
@@ -56,8 +55,8 @@ Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
 ================================================== -->
 <div class="span4 sidebar">
     <!--Categories-->
-    <h5 class="" style="margin-top: 0;"><?= $model->adv; ?></h5>
-    <h5 class="" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
+    <h5 class="adv"><?= $model->adv; ?></h5>
+    <h5 class="adv"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
 
 
 </div>

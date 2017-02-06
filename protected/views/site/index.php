@@ -5,7 +5,7 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 <!--<div class="container">-->
-<div style="padding-top:20px;">
+<div class="main">
 	<div class="span8">
 		<?php
 
@@ -16,8 +16,8 @@ $this->pageTitle=Yii::app()->name;
 
 
 			<article >
-				<h3 class="title-bg" style="margin-bottom: 0; background: white;"><a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>"><?= $post->head; ?></a></h3>
-				<div class="post-content" style="background-color: #fff;">
+				<h3 class="title-bg back"><a href="<?= Yii::app()->createUrl('post/view', array('id'=>$post->id)); ?>"><?= $post->head; ?></a></h3>
+				<div class="post-content back">
 
 					<div class="post-body">
 						<?= $post->content; ?>
@@ -39,8 +39,8 @@ $this->pageTitle=Yii::app()->name;
 	</div>
 
 	<div class="span4 sidebar">
-		<h5 class="" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
-        <h5 class="" style="margin-top: 0;"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
+		<h5 class="adv"><?php $adv = Adv::model()->findByPk(1); echo $adv->content; ?></h5>
+        <h5 class="adv"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
     </div>
 
 </div>

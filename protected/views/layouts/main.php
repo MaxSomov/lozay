@@ -6,21 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3376BC">
 
-    <!-- CSS
-    ================================================== -->
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.css">
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/jquery.lightbox-0.5.css">
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.css">
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.css"/>
-    <![endif]-->
-
-    <!-- CSS
-================================================== -->
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.css">
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.css">
@@ -34,12 +19,7 @@
     <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.css"/>
     <![endif]-->
 
-    <!-- Favicons
-    ================================================== -->
-    <!--    <link rel="shortcut icon" href="img/favicon.ico">-->
-    <!--    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">-->
-    <!--    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">-->
-    <!--    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">-->
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- JS
     ================================================== -->
@@ -48,86 +28,45 @@
     <script src="/WG%20Piccolo%20Theme/js/jquery.prettyPhoto.js"></script>
     <script src="/WG%20Piccolo%20Theme/js/jquery.flexslider.js"></script>
     <script src="/WG%20Piccolo%20Theme/js/jquery.custom.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            $("#btn-blog-next").click(function () {
-                $('#blogCarousel').carousel('next')
-            });
-            $("#btn-blog-prev").click(function () {
-                $('#blogCarousel').carousel('prev')
-            });
-
-            $("#btn-client-next").click(function () {
-                $('#clientCarousel').carousel('next')
-            });
-            $("#btn-client-prev").click(function () {
-                $('#clientCarousel').carousel('prev')
-            });
-
-        });
-
-        $(window).load(function () {
-
-            $('.flexslider').flexslider({
-                animation: "slide",
-                slideshow: true,
-                start: function (slider) {
-                    $('body').removeClass('loading');
-                }
-            });
-        });
-
-    </script>
-
-
 </head>
 
 <body>
 <div class="color-bar-1"></div>
 <div class="color-bar-2 color-bg"></div>
 
-<div style="background: white; margin-bottom: 0px;">
+<div class="back">
     <div class="container">
-        <div class="row header" style="margin-bottom: 0;"><!-- Begin Header -->
+        <div class="row header back"><!-- Begin Header -->
 
             <!-- Logo
             ================================================== -->
             <div class="span8">
-                <a style="" href="http://lozay/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px"
-                                                      alt=""/></a>
-                <!--            <h5>Big Things... Small Packages</h5>-->
+                <a href="http://lozay.ru/"><img src="/WG%20Piccolo%20Theme/img/logo.jpg" width="200px" alt=""/></a>
             </div>
 
-
             <div class="span4">
-                <section style="margin-top: 45px; align-content: right;">
+                <section class="search">
                     <div class="input-append">
                         <form action="<?= Yii::app()->createUrl('/site/page', array('view' => 'search')); ?>"
                               method="post">
-                            <input name="keyword" id="appendedInputButton" size="16" type="text"
-                                   placeholder="Поиск...">
+                            <input name="keyword" id="appendedInputButton" size="16" type="text" placeholder="Поиск...">
                             <button class="btn" type="submit"><i class="icon-search"></i></button>
                         </form>
                     </div>
                 </section>
-                <!--            <ul class="social-icons" style="font-size: 20pt; text-align: right;">-->
-                <!--                <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>-->
-                <!--                <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>-->
-                <!--                <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i class="fa fa-youtube"></i> </a></li>-->
-                <!--                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>-->
-                <!--            </ul>-->
             </div>
 
             <!-- Main Navigation
             ================================================== -->
-            <div class="span12" style="">
-                <div class="span12 navigation" style="margin-top: 5px; margin-bottom: 0; margin-left: 0;">
-                    <div class="navbar hidden-phone" style="">
+            <div class="span12">
+                <div class="span12 navigation mynav">
+                    <div class="navbar hidden-phone">
 
-                        <ul class="nav" style="margin-right: 0;">
+                        <!--                        @todo: ul margin-right:0 не работает в css!!-->
+
+                        <ul class="nav navul">
                             <li>
-                                <a href="http://lozay/" style="font-weight: bold;">Главная</a>
+                                <a href="http://lozay.ru/" class="bold">Главная</a>
                             </li>
 
                             <?php
@@ -137,14 +76,15 @@
                                 if (count($menu2s) == 0) {
                                     ?>
                                     <li>
-                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></a>
+                                        <a class="bold"
+                                           href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></a>
                                     </li>
                                     <?php
                                 } else {
                                     ?>
                                     <li class="dropdown">
-                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"
-                                           class="dropdown-toggle"
+                                        <a href="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"
+                                           class="dropdown-toggle bold"
                                            data-toggle="dropdown"><?php echo $menu1->name; ?> <b class="caret"></b></a>
                                         <ul class="dropdown-menu multi-level">
                                             <?php
@@ -153,21 +93,25 @@
                                                 if (count($menu3s) == 0) {
                                                     ?>
                                                     <li>
-                                                        <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"><?php echo $menu2->name; ?></a>
+                                                        <a class="bold"
+                                                           href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"><?php echo $menu2->name; ?></a>
                                                     </li>
                                                     <?php
                                                 } else {
                                                     ?>
-                                                    <li class="dropdown-submenu" onmouseout="out(<?= $menu2->id; ?>)" onmouseover="over(<?= $menu2->id; ?>)">
-                                                        <a  style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
-                                                           class="dropdown-toggle"
+                                                    <li class="dropdown-submenu" onmouseout="out(<?= $menu2->id; ?>)"
+                                                        onmouseover="over(<?= $menu2->id; ?>)">
+                                                        <a href="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>"
+                                                           class="dropdown-toggle bold"
                                                            data-toggle="dropdown"><?php echo $menu2->name; ?></a>
-                                                        <ul class="dropdown-menu" id="parent<?= $menu2->id; ?>" style="display: none;">
+                                                        <ul class="dropdown-menu" id="parent<?= $menu2->id; ?>"
+                                                            style="display: none;">
                                                             <?php
                                                             foreach ($menu3s as $menu3) {
                                                                 ?>
                                                                 <li>
-                                                                    <a style="font-weight: bold;" href="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>"><?php echo $menu3->name; ?></a>
+                                                                    <a class="bold"
+                                                                       href="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>"><?php echo $menu3->name; ?></a>
                                                                 </li>
                                                                 <?php
                                                             }
@@ -190,29 +134,29 @@
 
                     <!-- Mobile Nav
                     ================================================== -->
-                    <form action="#" id="mobile-nav" class="visible-phone" style="margin-left: 10%;">
+                    <form action="#" id="mobile-nav" class="visible-phone">
                         <div class="mobile-nav-select">
                             <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
                                 <option value="">Меню...</option>
-                                <option value="http://lozay">Главная</option>
+                                <option value="http://lozay.ru">Главная</option>
                                 <?php
                                 foreach ($menu1s as $menu1) {
                                     $menu2s = Menu2::model()->findAllByAttributes(array("parent_id" => $menu1->id));
                                     ?>
                                     <option
-                                        value="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></option>
+                                            value="<?php echo Yii::app()->createUrl('menu1/view', array('id' => $menu1->id)); ?>"><?php echo $menu1->name; ?></option>
                                     <?php
                                     foreach ($menu2s as $menu2) {
                                         $menu3s = Menu3::model()->findAllByAttributes(array("parent_id" => $menu2->id));
                                         ?>
                                         <option
-                                            value="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>">
+                                                value="<?php echo Yii::app()->createUrl('menu2/view', array('id' => $menu2->id)); ?>">
                                             - <?php echo $menu2->name; ?></option>
                                         <?php
                                         foreach ($menu3s as $menu3) {
                                             ?>
                                             <option
-                                                value="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>">
+                                                    value="<?php echo Yii::app()->createUrl('menu3/view', array('id' => $menu3->id)); ?>">
                                                 - - <?php echo $menu3->name; ?></option>
                                             <?php
                                         }
@@ -228,7 +172,6 @@
                 </div>
 
 
-
             </div>
 
         </div><!-- End Header -->
@@ -237,7 +180,6 @@
 
 
 <div class="container">
-
 
     <!-- Blog Content
     ================================================== -->
@@ -256,11 +198,11 @@
         <div class="row footer-row">
             <div class="span3 footer-col">
                 <h5>Контакты</h5>
-                <ul class="social-icons" style="font-size: 30pt;">
+                <ul class="social-icons icons">
                     <li><a href="https://vk.com/lozay" target="_blank"><i class="fa fa-vk"></i> </a></li>
                     <li><a href="https://www.twitch.tv/lozay" target="_blank"><i class="fa fa-twitch"></i> </a></li>
                     <li><a href="https://www.youtube.com/channel/UCoZf_-sYggPDXHiiOnhdvYw" target="_blank"><i
-                                class="fa fa-youtube"></i> </a></li>
+                                    class="fa fa-youtube"></i> </a></li>
                     <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i> </a></li>
                 </ul>
             </div>
@@ -287,7 +229,7 @@
                     <div class="span6"><span class="left">© <?php echo date('Y', time()); ?> Lozay.</span></div>
                     <div class="span6">
                             <span class="right">
-<!--                            <a href="#">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Blog</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>-->
+<!--                                полоска футера справа -->
                             </span>
                     </div>
                 </div>
@@ -303,14 +245,5 @@
 </body>
 </html>
 
-<script>
-    function over(id) {
-        document.getElementById('parent' + id).removeAttribute('style');
-        document.getElementById('parent' + id).setAttribute('style', 'display: block');
-    }
-
-    function out(id) {
-        document.getElementById('parent' + id).removeAttribute('style');
-        document.getElementById('parent' + id).setAttribute('style', 'display: none');
-    }
+<script src="/js/scripts.js">
 </script>
