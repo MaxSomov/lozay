@@ -32,7 +32,7 @@ else{
     <li class="active"><?= $model->name; ?></li>
 </ol>
 
-<h1 class="title-bg" style="margin-bottom: 5px;"><?= $model->name; ?></h1>
+<h1 class="title-bg" style="margin-bottom: 5px;"><?= $m3->name; ?></h1>
 
 
 <div class="span12 btn-group" style="margin-bottom: 40px; margin-left: 0;">
@@ -43,7 +43,7 @@ else{
         <?php
         foreach ($nav as $item) {
             ?>
-            <a class="btn btn-primary" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
+            <a class="btn <?php if ($item->id == $model->id) echo "btn-default"; else echo "btn-primary"; ?>" href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
             <?php
         }
         ?>
