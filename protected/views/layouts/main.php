@@ -241,9 +241,8 @@
 
 <!-- Scroll to Top -->
 <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
-
+<script src="/js/scripts.js">
+</script>
 </body>
 </html>
 
-<script src="/js/scripts.js">
-</script>

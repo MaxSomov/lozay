@@ -23,7 +23,7 @@ if ($model->menu3 == 0) {
 <div class="container site-content">
 
     <ol class="breadcrumb">
-        <li><a href="http://lozay">Главная</a></li>
+        <li><a href="http://lozay.ru">Главная</a></li>
         <li><a href="<?= Yii::app()->createUrl('menu1/view', array('id' => $m1->id)); ?>"><?= $m1->name; ?></a></li>
         <li><a href="<?= Yii::app()->createUrl('menu2/view', array('id' => $m2->id)); ?>"><?= $m2->name; ?></a></li>
         <li><a href="<?= Yii::app()->createUrl('menu3/view', array('id' => $m3->id)); ?>"><?= $m3->name; ?></a></li>
@@ -41,7 +41,7 @@ if ($model->menu3 == 0) {
             <?php
             foreach ($nav as $item) {
                 ?>
-                <a class="btn <?php if ($item->id == $model->id) echo "btn-default"; else echo "btn-primary"; ?>"
+                <a class="btn <?php if ($item->id == $model->id) echo "btn-default blue"; else echo "btn-primary"; ?>"
                    href="<?= Yii::app()->createUrl('menu4/view', array('id' => $item->id)); ?>"><?php echo $item->name; ?></a>
                 <?php
             }
