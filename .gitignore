@@ -14,3 +14,4 @@
 /protected/config/
 /protected/config/database.php
 /.idea
+/protected/runtime/application.log
