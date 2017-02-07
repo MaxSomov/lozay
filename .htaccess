@@ -7,3 +7,14 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php
+
+<ifmodule mod_deflate="" c="">
+SetOutputFilter DEFLATE
+Header append Vary User-Agent
+</ifmodule>
+
+<ifmodule mod_headers.c>
+<FilesMatch "\.(js|css|gif|jpg|jpeg|png)$">
+    Header set Cache-Control "max-age=43200"
+</FilesMatch>
+</ifmodule>

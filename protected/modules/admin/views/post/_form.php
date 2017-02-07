@@ -23,11 +23,14 @@
 
 	<div class="row">
 <!--		--><?php //echo $form->labelEx($model,'head'); ?>
-		<?php echo $form->textField($model,'head',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'head',array('rows'=>6, 'cols'=>50, 'class'=>'form-control', 'placeholder'=>'Заголовок')); ?>
 		<?php echo $form->error($model,'head'); ?>
 	</div><br>
 
 	<div class="row">
+        <label>Редактор статьи.<br>
+            <code>Обязательно ставить выравнивание по ширине</code><br>
+            Кнопка <img src="https://pp.vk.me/c637219/v637219916/2dd76/2qzdac6Nl1g.jpg"> (второй ряд, вторая справа) добавляет невидимую горизонтальную линию, текст после которой не будет отображаться на главной странице и в списке статей.<br> Можно вставлять код рекламы. </label>
 <!--		--><?php //echo $form->labelEx($model,'content'); ?>
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
@@ -48,6 +51,7 @@
 
 
 	<div class="row">
+        <label>Основное меню. <code>ПРИ РЕДАКТИРОВАНИИ СТАТЬИ МОЖЕТ СБИТЬСЯ!!</code></label>
 		<select class="form-control" name="cat">
 			<?php
 
@@ -71,24 +75,37 @@
 					}
 				}
 
-//				$cat3s = Cat3::model()->findAll();
-//			foreach ($cat3s as $cat3){
-//				$subcategory = Subcategory::model()->findByPk($cat3->subcategory_id);
-//				$category = Category::model()->findByPk($cat3->category_id);
-//				echo "<option value='".$cat3->id."'>".$cat3->name."</option>";
-//			}
 			?>
 		</select>
 	</div>
+    <br><br>
 
 	<div class="row">
-		<select class="form-control" name="menu4">
-			<option value="0">null</option>
+        <label>Горизонтальное меню. Можно оставить пустым. <code>ПРИ РЕДАКТИРОВАНИИ СТАТЬИ МОЖЕТ СБИТЬСЯ!!</code></label>
+        <select class="form-control" name="menu4">
+			<option value="0"> </option>
 			<?php
 			$menu = Menu4::model()->findAll();
 			foreach ($menu as $item){
+
+                if ($item->menu3 == 0) {
+                    if ($item->menu2 == 0) {
+                        $m1 = Menu1::model()->findByPk($item->menu1);
+                        $m2 = 0;
+                        $m3 = 0;
+                    } else {
+                        $m2 = Menu2::model()->findByPk($item->menu2);
+                        $m1 = Menu1::model()->findByPk($m2->parent_id);
+                        $m3 = 0;
+                    }
+                } else {
+                    $m3 = Menu3::model()->findByPk($item->menu3);
+                    $m2 = Menu2::model()->findByPk($m3->parent_id);
+                    $m1 = Menu1::model()->findByPk($m2->parent_id);
+                }
+			    
 				?>
-				<option value="<?php echo $item->id; ?>"><?php echo $item->name; ?></option>
+				<option value="<?php echo $item->id; ?>"><?php echo $item->name." (".$m1->name." - ".$m2->name." - ".$m3->name.")"; ?></option>
 			<?php
 			}
 			?>
@@ -98,15 +115,22 @@
 	<br>
 
 	<div class="row">
-		Метаданные
+		<label>Ключевые слова. <code>Указываются через запятую</code></label>
 		<?php echo $form->textField($model,'meta',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'meta'); ?>
 	</div>
 
+    <div class="row">
+        <label>Описание. <code>Каждая страница долна иметь уникальное описание размером не более 140 символов.</code></label>
+        <?php echo $form->textField($model,'description',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
+        <?php echo $form->error($model,'description'); ?>
+    </div>
+
 	<br>
 
 	<div class="row">
-		Реклама
+<!--        @todo: проверить возможность добавления нескольких реклам!!-->
+		<label>Код рекламы. Можно добавить несколько скриптов (но это не точно).</label>
 		<?php echo $form->textField($model,'adv',array('rows'=>6, 'cols'=>50, 'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'adv'); ?>
 	</div>

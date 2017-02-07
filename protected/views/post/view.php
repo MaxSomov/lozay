@@ -3,6 +3,10 @@
 /* @var $model Post */
 
 Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
+Yii::app()->clientScript->registerMetaTag($model->description, "description");
+
+$this->pageTitle = $model->head;
+
 ?>
 
 <ol class="breadcrumb">

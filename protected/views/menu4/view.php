@@ -18,6 +18,11 @@ if ($model->menu3 == 0) {
     $m1 = Menu1::model()->findByPk($m2->parent_id);
 }
 
+$this->pageTitle = $model->name." - ".$m3->name." - ".$m2->name." - ".$m1->name;
+
+Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
+Yii::app()->clientScript->registerMetaTag($model->description, "description");
+
 ?>
 
 <div class="container site-content">

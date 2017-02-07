@@ -2,6 +2,8 @@
 /* @var $this Menu1Controller */
 /* @var $model Menu1 */
 
+Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
+Yii::app()->clientScript->registerMetaTag($model->description, "description");
 
 ?>
 
@@ -13,6 +15,10 @@
             echo Yii::app()->createUrl('menu1/view', array('id' => $parent->id)); ?>"><?= $parent->name; ?></a></li>
         <li class="active"><?= $model->name; ?></li>
     </ol>
+
+    <?php
+        $this->pageTitle = $model->name." - ".$parent->name;
+    ?>
 
     <h1 class="title-bg head"><?= $model->name; ?></h1>
 

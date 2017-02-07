@@ -6,6 +6,8 @@
  * The followings are the available columns in table 'menu1':
  * @property integer $id
  * @property string $name
+ * @property string $meta
+ * @property string $description
  */
 class Menu1 extends CActiveRecord
 {
@@ -26,9 +28,10 @@ class Menu1 extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('name', 'required'),
+			array('meta, description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name', 'safe', 'on'=>'search'),
+			array('id, name, meta, description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -51,6 +54,8 @@ class Menu1 extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'meta' => 'Meta',
+			'description' => 'Description',
 		);
 	}
 
@@ -74,6 +79,8 @@ class Menu1 extends CActiveRecord
 
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
+		$criteria->compare('meta',$this->meta,true);
+		$criteria->compare('description',$this->description,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

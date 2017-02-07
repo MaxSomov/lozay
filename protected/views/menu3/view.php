@@ -6,6 +6,8 @@
 $m2 = Menu2::model()->findByPk($model->parent_id);
 $m1 = Menu1::model()->findByPk($m2->parent_id);
 
+$this->pageTitle = $model->name." - ".$m2->name." - ".$m1->name;
+
 ?>
 
 <div class="container site-content">

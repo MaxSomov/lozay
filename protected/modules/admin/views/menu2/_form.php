@@ -43,7 +43,20 @@
 	</select>
 </div>
 
-	<div class="row buttons">
+    <div class="row">
+        <!--		--><?php //echo $form->labelEx($model,'name'); ?>
+        <?php echo $form->textField($model,'meta',array('rows'=>6, 'cols'=>50, 'class'=>'form-control', 'placeholder'=>'Ключевые слова через запятую')); ?>
+        <?php echo $form->error($model,'meta'); ?>
+    </div>
+
+    <div class="row">
+        <!--		--><?php //echo $form->labelEx($model,'name'); ?>
+        <?php echo $form->textField($model,'description',array('rows'=>6, 'cols'=>50, 'class'=>'form-control', 'placeholder'=>'Описание')); ?>
+        <?php echo $form->error($model,'description'); ?>
+    </div>
+
+
+    <div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Сохранить' : 'Save', array('class'=>'btn btn-primary')); ?>
 	</div>
 

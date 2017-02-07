@@ -7,6 +7,8 @@
  * @property integer $id
  * @property string $name
  * @property integer $parent_id
+ * @property string $meta
+ * @property string $description
  */
 class Menu3 extends CActiveRecord
 {
@@ -28,9 +30,10 @@ class Menu3 extends CActiveRecord
 		return array(
 			array('name, parent_id', 'required'),
 			array('parent_id', 'numerical', 'integerOnly'=>true),
+			array('meta, description', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, parent_id', 'safe', 'on'=>'search'),
+			array('id, name, parent_id, meta, description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +57,8 @@ class Menu3 extends CActiveRecord
 			'id' => 'ID',
 			'name' => 'Name',
 			'parent_id' => 'Parent',
+			'meta' => 'Meta',
+			'description' => 'Description',
 		);
 	}
 
@@ -78,6 +83,8 @@ class Menu3 extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('parent_id',$this->parent_id);
+		$criteria->compare('meta',$this->meta,true);
+		$criteria->compare('description',$this->description,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

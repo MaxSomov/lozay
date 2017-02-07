@@ -2,6 +2,10 @@
 /* @var $this Menu1Controller */
 /* @var $model Menu1 */
 
+$this->pageTitle = $model->name." - ".Yii::app()->name;
+
+Yii::app()->clientScript->registerMetaTag($model->meta, "keywords");
+Yii::app()->clientScript->registerMetaTag($model->description, "description");
 
 ?>
 

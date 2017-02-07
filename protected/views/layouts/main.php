@@ -2,32 +2,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <title>Lozay</title>
+
+    <title><?= CHtml::encode($this->pageTitle); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#3376BC">
 
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.css">
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/prettyPhoto.css"/>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/flexslider.css"/>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/prettyPhoto.min.css"/>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/flexslider.min.css"/>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/custom-styles.min.css">
     <link rel="stylesheet" href="/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.css"/>
+    <link rel="stylesheet" href="/WG%20Piccolo%20Theme/css/style-ie.min.css"/>
     <![endif]-->
 
-    <link rel="stylesheet" href="/css/style.css">
-
-    <!-- JS
-    ================================================== -->
-    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script src="/WG%20Piccolo%20Theme/js/bootstrap.js"></script>
-    <script src="/WG%20Piccolo%20Theme/js/jquery.prettyPhoto.js"></script>
-    <script src="/WG%20Piccolo%20Theme/js/jquery.flexslider.js"></script>
-    <script src="/WG%20Piccolo%20Theme/js/jquery.custom.js"></script>
+    <link rel="stylesheet" href="/css/style.min.css">
 </head>
 
 <body>
@@ -241,8 +234,17 @@
 
 <!-- Scroll to Top -->
 <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
-<script src="/js/scripts.js">
-</script>
+
+<script src="/js/scripts.min.js"></script>
+
+<!-- JS
+    ================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="/WG%20Piccolo%20Theme/js/bootstrap.min.js"></script>
+<script src="/WG%20Piccolo%20Theme/js/jquery.prettyPhoto.min.js"></script>
+<script src="/WG%20Piccolo%20Theme/js/jquery.flexslider.min.js"></script>
+<script src="/WG%20Piccolo%20Theme/js/jquery.custom.min.js"></script>
+
 </body>
 </html>
 
