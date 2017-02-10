@@ -53,6 +53,14 @@ $this->pageTitle = $model->head;
         </div>
     </article>
 
+    <!-- Put this script tag to the <head> of your page -->
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?94" charset="windows-1251"></script>
+
+    <!-- Put this script tag to the place, where the Share button will be -->
+    <script type="text/javascript"><!--
+        document.write(VK.Share.button(false,{type: "round", text: "Поделиться"}));
+        --></script>
+
 </div><!--Close container row-->
 
 <!-- Blog Sidebar
