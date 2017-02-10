@@ -53,6 +53,7 @@
                     " посетителей за 24 часа' "+
                     "border='0' width='88' height='31'><\/a>")
             </script><!--/LiveInternet--></li>
+        <li role="presentation"><a href="<?= Yii::app()->createUrl('admin/default/log'); ?>">Логи</a> </li>
     </ul>
 </div>
 

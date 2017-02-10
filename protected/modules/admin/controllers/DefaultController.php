@@ -21,7 +21,7 @@ class DefaultController extends Controller
     {
         return array(
             array('allow',  // allow all users to perform 'index' and 'view' actions
-                'actions'=>array('index','view'),
+                'actions'=>array('index','view', 'log', 'clear'),
                 'users'=>array('@'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -42,5 +42,15 @@ class DefaultController extends Controller
 	{
 		$this->render('index');
 	}
+
+	public function actionLog(){
+        $this->render('log');
+    }
+
+    public function actionClear(){
+        $fp = fopen(dirname(__FILE__).'/../../../runtime/application.log', 'w+');
+        fclose($fp);
+	    $this->redirect('log');
+    }
 
 }
