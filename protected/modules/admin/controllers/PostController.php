@@ -136,16 +136,20 @@ class PostController extends Controller
 	{
 		$model=$this->loadModel($id);
 
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Post']))
 		{
 			$model->attributes=$_POST['Post'];
-            $model->cat3_id = $_POST['cat'];
-            $cat3 = Cat3::model()->findByPk($model->cat3_id);
-            $model->category_id = $cat3->category_id;
-            $model->subcategory_id = $cat3->subcategory_id;
+            $model->date = time();
+            $str = $_POST['cat'];
+            $str_array = explode("_", $str);
+            $model->menu1 = $str_array[0];
+            $model->menu2 = $str_array[1];
+            $model->menu3 = $str_array[2];
+            $model->menu4 = $_POST['menu4'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}

@@ -68,7 +68,7 @@ $this->pageTitle = $model->head;
 <div class="span4 sidebar">
     <!--Categories-->
     <h5 class="adv"><?= $model->adv; ?></h5>
-    <h5 class="adv"><?php $adv = Adv::model()->findByPk(2); echo $adv->content; ?></h5>
+<!--    <h5 class="adv">--><?php //$adv = Adv::model()->findByPk(2); echo $adv->content; ?><!--</h5>-->
 
 
 </div>
