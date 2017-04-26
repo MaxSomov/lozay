@@ -5,25 +5,25 @@ $this->pageTitle=Yii::app()->name;
 ?>
 
 
-<style>
-    #sticky {
-        position: fixed;
-        top: 190px;
-        right: 0px;
-    }
-</style>
-
-<script>
-    window.onscroll = function () {
-        if(window.pageYOffset < 170){
-            var str = 190 - window.pageYOffset+"px";
-            document.getElementById('sticky').style.top = str;
-        }
-        else {
-            document.getElementById('sticky').style.top = "20px";
-        }
-    }
-</script>
+<!--<style>-->
+<!--    #sticky {-->
+<!--        position: fixed;-->
+<!--        top: 190px;-->
+<!--        right: 0px;-->
+<!--    }-->
+<!--</style>-->
+<!---->
+<!--<script>-->
+<!--    window.onscroll = function () {-->
+<!--        if(window.pageYOffset < 170){-->
+<!--            var str = 190 - window.pageYOffset+"px";-->
+<!--            document.getElementById('sticky').style.top = str;-->
+<!--        }-->
+<!--        else {-->
+<!--            document.getElementById('sticky').style.top = "20px";-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 
 
 <!--<div class="container">-->
